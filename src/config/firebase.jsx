@@ -26,7 +26,7 @@ export function SignIn() {
       console.log(auth);
     }
     return (
-      <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center w-1/2'>
+      <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
         <button className='text-white' onClick={signInWithGoogle}>Sign In With Google</button>
       </motion.div>
     )

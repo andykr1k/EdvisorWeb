@@ -7,9 +7,9 @@ function ProfilePicture() {
     const userHighResPhoto = user.photoURL.replace("s96-c", "s384-c", true);
     return (
     <div>
-        <a class="relative block bg-black group" href="">
+        <a class="relative block bg-black rounded-lg group" href="">
         <img
-            class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
+            class="absolute inset-0 object-cover w-full rounded-lg h-full transition-opacity opacity-75  group-hover:opacity-50"
             src={userHighResPhoto}
             alt=""
         />

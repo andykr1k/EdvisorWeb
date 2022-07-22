@@ -10,8 +10,12 @@ function ProfilePage() {
   return (
     <div>
       <div className='grid place-items-center bg-gray-200'>
-            <ProfilePicture />
+        <div className='flex'>
+          <ProfilePicture />
+        </div>
+          <div class="mt-4 w-1/2 m-auto">
             <SignOut />
+          </div>
       </div>
     </div>
   )
