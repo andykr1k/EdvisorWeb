@@ -1,7 +1,10 @@
 import * as React from 'react'
 import logo from '../assets/icon.png'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../config/firebase';
+
 function Header() {
-    const [user] = React.useState(false);
+    const [user, loading, error] = useAuthState(auth);
 
   return (
     <header class="bg-gray-50">
@@ -82,29 +85,17 @@ function Header() {
                         <a href="/profile">
                         <img
                             class="object-cover w-10 h-10 rounded-full"
-                            src="https://www.hyperui.dev/photos/man-6.jpeg"
+                            src={user.photoURL}
                             alt="Barry Scott"
                         />
                         </a>
 
                         <p class="hidden ml-2 text-xs text-left sm:block">
-                            <strong class="block text-gray-500 font-medium">Barry Scott</strong>
+                            <strong class="block text-gray-500 font-medium">{user.displayName}</strong>
 
-                            <span class="text-gray-500"> barryscott@fakemail.com </span>
+                            <span class="text-gray-500"> {user.email} </span>
                         </p>
 
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="hidden w-5 h-5 ml-4 text-gray-500 transition sm:block group-hover:text-gray-700"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                        >
-                            <path
-                            fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                            />
-                        </svg>
                         </button>
                         
                     </div>

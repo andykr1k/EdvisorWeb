@@ -1,13 +1,15 @@
 import * as React from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../config/firebase';
 
 function ProfilePicture() {
-
-  return (
+    const [user, loading, error] = useAuthState(auth);
+    return (
     <div>
         <a class="relative block bg-black group" href="">
         <img
             class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
-            src="https://www.hyperui.dev/photos/man-6.jpeg"
+            src={user.photoURL}
             alt=""
         />
         <div class="relative p-8">
@@ -15,7 +17,7 @@ function ProfilePicture() {
             Computer Science Major
             </p>
 
-            <p class="text-2xl font-bold text-white">Barry Scott</p>
+            <p class="text-2xl font-bold text-white">{user.displayName}</p>
 
             <div class="mt-64">
             <div

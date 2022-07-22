@@ -1,5 +1,7 @@
 import * as React from 'react'
 import head from '../assets/head.png'
+import {SignIn} from '../config/firebase'
+
 function SignInPage() {
 
   return (
@@ -88,7 +90,7 @@ function SignInPage() {
         <div class="flex items-center justify-between">
             <p class="text-sm text-gray-500">
             No account?
-            <a class="underline" href="">Sign up</a>
+            <a class="underline" href="/profile">Sign up</a>
             </p>
 
             <button
@@ -99,6 +101,7 @@ function SignInPage() {
             </button>
         </div>
         </form>
+        <a><SignIn /></a>
     </div>
     </section>
   )
