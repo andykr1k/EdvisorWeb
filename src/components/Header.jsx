@@ -100,30 +100,25 @@ function Header() {
             :
             <div></div> 
             }
-
-            <div class="mt-8">
-            <div className='flex items-center'>
-            <div class="relative">
-                <motion.a href="/"><motion.img whileHover={{scale:1.2}} className=' pr-4 w-24 md:w-36' src={logo}/></motion.a>
-            </div>
-            <div className='grid'>
-            { user ? 
-            <h1 class="text-sm font-bold text-gray-500">
-                Welcome back {user.displayName.trimEnd()}
-            </h1>
+            { user ?
+            <div></div>
             :
-            <h1 class="text-sm font-bold text-gray-500">
-                Welcome to
-            </h1>
+            <div class="mt-8">
+                <div className='flex items-center'>
+                    <div class="relative">
+                        <motion.a href="/"><motion.img whileHover={{scale:1.2}} className=' pr-4 w-24 md:w-36' src={logo}/></motion.a>
+                    </div>
+                    <div className='grid'>
+                        <h1 class="text-sm font-bold text-gray-500">
+                            Welcome to
+                        </h1>
+                        <p class="mt-1.5 text-3xl font-bold sm:text-3xl text-gray-900">
+                            Edvisor
+                        </p>
+                    </div>
+                </div>
+            </div>
             }
-            <p class="mt-1.5 text-3xl font-bold sm:text-3xl text-gray-900">
-                Edvisor
-            </p>
-            </div>
-            
-            </div>
-            
-            </div>
         </div>
     </header>
   )
