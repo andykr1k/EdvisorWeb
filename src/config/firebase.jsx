@@ -35,7 +35,7 @@ export function SignIn() {
 export function SignOut() {
     return auth.currentUser && (
       <div class='signingout'>
-        <motion.div whileHover={{scale: 1.2}} className= 'bg-black p-2 bg-opacity-10 rounded-md text-center w-1/2'>
+        <motion.div whileHover={{scale: 1.2}} className= 'bg-black p-2 bg-opacity-10 rounded-md text-center'>
             <button className='text-black' onClick={() => auth.signOut()}>Sign Out</button>
         </motion.div>
       </div>
