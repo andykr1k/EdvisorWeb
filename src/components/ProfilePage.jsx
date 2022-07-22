@@ -8,12 +8,12 @@ function ProfilePage() {
   const [user, loading, error] = useAuthState(auth);
 
   return (
-    <div>
+    <div className=''>
       <div className='grid place-items-center bg-gray-200'>
         <div className='flex'>
           <ProfilePicture />
         </div>
-          <div class="mt-4 w-1/2 m-auto">
+          <div class="mt-4 w-1/3 m-auto p-5">
             <SignOut />
           </div>
       </div>

@@ -7,7 +7,6 @@ function Footer() {
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-                <img className='w-28' src={logo}/>
 
                 <p class="max-w-xs mt-4 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
