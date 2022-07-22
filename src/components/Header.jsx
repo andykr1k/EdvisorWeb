@@ -1,6 +1,7 @@
 import * as React from 'react'
 import logo from '../assets/icon.png'
 function Header() {
+    const [user] = React.useState(true);
 
   return (
     <header class="bg-gray-50">
@@ -73,8 +74,7 @@ function Header() {
                         </svg>
                     </a>
                     </div>
-
-                    <button
+                    { user ? <button
                     type="button"
                     class="flex items-center transition rounded-lg group shrink-0"
                     >
@@ -105,6 +105,8 @@ function Header() {
                         />
                     </svg>
                     </button>
+                    : <div></div>}
+                    
                 </div>
             </div>
 
