@@ -58,7 +58,7 @@ function Footer() {
 
             <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
                 <div>
-                <p class="font-medium">
+                <p class="font-medium text-gray-600">
                     Company
                 </p>
 
@@ -70,7 +70,7 @@ function Footer() {
                 </div>
 
                 <div>
-                <p class="font-medium">
+                <p class="font-medium text-gray-600">
                     Helpful Links
                 </p>
 
@@ -82,7 +82,7 @@ function Footer() {
                 </div>
 
                 <div>
-                <p class="font-medium">
+                <p class="font-medium text-gray-600">
                     Legal
                 </p>
 
