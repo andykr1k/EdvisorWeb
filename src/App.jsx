@@ -7,7 +7,6 @@ import './App.css'
 import AboutPage from './components/AboutPage'
 
 function App() {
-
   return (
     <div className="App">
       <Header />
