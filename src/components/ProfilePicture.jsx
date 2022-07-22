@@ -12,7 +12,7 @@ function ProfilePicture() {
         />
         <div class="relative p-8">
             <p class="text-sm font-medium tracking-widest text-pink-500 uppercase">
-            Developer
+            Computer Science Major
             </p>
 
             <p class="text-2xl font-bold text-white">Barry Scott</p>
@@ -22,9 +22,7 @@ function ProfilePicture() {
                 class="transition-all transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0"
             >
                 <p class="text-sm text-white">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-                perferendis hic asperiores quibusdam quidem voluptates doloremque
-                reiciendis nostrum harum. Repudiandae?
+                Target Schools: UCLA, UCSD, UCB, MIT
                 </p>
             </div>
             </div>

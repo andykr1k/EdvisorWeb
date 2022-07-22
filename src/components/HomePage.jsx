@@ -1,33 +1,35 @@
 import * as React from 'react'
+import front from '../assets/front.png'
+import head from '../assets/head.png'
 
 function HomePage() {
 
   return (
     <div>
-        <section>
+        <section className='bg-gray-100'>
         <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
             <div class="relative z-10 lg:py-16">
                 <div class="relative h-64 sm:h-80 lg:h-full">
                 <img
                     class="absolute inset-0 object-cover w-full h-full"
-                    src="https://www.hyperui.dev/photos/house-1.jpeg"
+                    src={front}
                     alt="Indoors house"
                 />
                 </div>
             </div>
 
-            <div class="relative flex items-center bg-gray-100">
+            <div class="relative flex items-center bg-gray-600">
                 <span
                 class="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"
                 ></span>
 
                 <div class="p-8 sm:p-16 lg:p-24">
-                <h2 class="text-2xl text-gray-600 font-bold sm:text-3xl">
+                <h2 class="text-2xl text-white font-bold sm:text-3xl">
                     Welcome to the next generation of tools to help further higher education.
                 </h2>
 
-                <p class="mt-4 text-gray-600">
+                <p class="mt-4 text-gray-200">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
                     molestiae! Quidem est esse numquam odio deleniti, beatae, magni
                     dolores provident quaerat totam eos, aperiam architecto eius quis
@@ -35,7 +37,7 @@ function HomePage() {
                 </p>
 
                 <a
-                    class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
+                    class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-white focus:outline-none focus:ring"
                     href="/getstarted"
                 >
                     Get Started
@@ -45,12 +47,12 @@ function HomePage() {
             </div>
         </div>
         </section>
-        <section class="text-white">
+        <section class="text-white bg-gray-100">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
             <div class="max-w-lg mx-auto text-center">
-            <h2 class="text-3xl font-bold sm:text-4xl">Take Control of the Transfer Process!</h2>
+            <h2 class="text-3xl font-bold text-gray-600 sm:text-4xl">Take Control of the Transfer Process!</h2>
 
-            <p class="mt-4 text-gray-300">
+            <p class="mt-4 text-gray-600">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
                 aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur
                 saepe laborum.
@@ -81,9 +83,9 @@ function HomePage() {
                 />
                 </svg>
 
-                <h3 class="mt-4 text-xl font-bold text-white">Tailor Profile</h3>
+                <h3 class="mt-4 text-xl font-bold text-gray-600">Tailor Profile</h3>
 
-                <p class="mt-1 text-sm text-gray-300">
+                <p class="mt-1 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
                 possimus adipisci distinctio alias voluptatum blanditiis laudantium.
                 </p>
@@ -112,9 +114,9 @@ function HomePage() {
                 />
                 </svg>
 
-                <h3 class="mt-4 text-xl font-bold text-white">Create Goals</h3>
+                <h3 class="mt-4 text-xl font-bold text-gray-600">Create Goals</h3>
 
-                <p class="mt-1 text-sm text-gray-300">
+                <p class="mt-1 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
                 possimus adipisci distinctio alias voluptatum blanditiis laudantium.
                 </p>
@@ -143,9 +145,9 @@ function HomePage() {
                 />
                 </svg>
 
-                <h3 class="mt-4 text-xl font-bold text-white">Log Classes</h3>
+                <h3 class="mt-4 text-xl font-bold text-gray-600">Log Classes</h3>
 
-                <p class="mt-1 text-sm text-gray-300">
+                <p class="mt-1 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
                 possimus adipisci distinctio alias voluptatum blanditiis laudantium.
                 </p>
@@ -174,9 +176,9 @@ function HomePage() {
                 />
                 </svg>
 
-                <h3 class="mt-4 text-xl font-bold text-white">Track Progress</h3>
+                <h3 class="mt-4 text-xl font-bold text-gray-600">Track Progress</h3>
 
-                <p class="mt-1 text-sm text-gray-300">
+                <p class="mt-1 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
                 possimus adipisci distinctio alias voluptatum blanditiis laudantium.
                 </p>
@@ -205,9 +207,9 @@ function HomePage() {
                 />
                 </svg>
 
-                <h3 class="mt-4 text-xl font-bold text-white">Follow THE PATH</h3>
+                <h3 class="mt-4 text-xl font-bold text-gray-600">Follow THE PATH</h3>
 
-                <p class="mt-1 text-sm text-gray-300">
+                <p class="mt-1 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
                 possimus adipisci distinctio alias voluptatum blanditiis laudantium.
                 </p>
@@ -236,9 +238,9 @@ function HomePage() {
                 />
                 </svg>
 
-                <h3 class="mt-4 text-xl font-bold text-white">Transfer!</h3>
+                <h3 class="mt-4 text-xl font-bold text-gray-600">Transfer!</h3>
 
-                <p class="mt-1 text-sm text-gray-300">
+                <p class="mt-1 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
                 possimus adipisci distinctio alias voluptatum blanditiis laudantium.
                 </p>

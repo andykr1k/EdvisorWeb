@@ -1,5 +1,5 @@
 import * as React from 'react'
-
+import logo from '../assets/icon.png'
 function Footer() {
 
   return (
@@ -7,7 +7,7 @@ function Footer() {
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-                <span class="block w-32 h-10 bg-gray-200 rounded-lg"></span>
+                <img className='w-28' src={logo}/>
 
                 <p class="max-w-xs mt-4 text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
@@ -63,10 +63,9 @@ function Footer() {
                 </p>
 
                 <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                    <a class="hover:opacity-75" href=""> About </a>
-                    <a class="hover:opacity-75" href=""> Meet the Team </a>
-                    <a class="hover:opacity-75" href=""> History </a>
+                    <a class="hover:opacity-75" href="/about"> About </a>
                     <a class="hover:opacity-75" href=""> Careers </a>
+                    <a class="hover:opacity-75" href=""> History </a>
                 </nav>
                 </div>
 
@@ -76,7 +75,7 @@ function Footer() {
                 </p>
 
                 <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                    <a class="hover:opacity-75" href=""> Contact </a>
+                    <a class="hover:opacity-75" href="/contact"> Contact </a>
                     <a class="hover:opacity-75" href=""> FAQs </a>
                     <a class="hover:opacity-75" href=""> Live Chat </a>
                 </nav>
