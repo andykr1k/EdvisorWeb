@@ -26,7 +26,7 @@ export function SignIn() {
       console.log(auth);
     }
     return (
-      <motion.div whileHover={{scale: 1.2}} className='bg-black m-2 p-5 bg-opacity-10 rounded-md'>
+      <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center w-1/2'>
         <button className='text-white' onClick={signInWithGoogle}>Sign In With Google</button>
       </motion.div>
     )
@@ -35,8 +35,8 @@ export function SignIn() {
 export function SignOut() {
     return auth.currentUser && (
       <div class='signingout'>
-        <motion.div whileHover={{scale: 1.2}} className='absolute top-10 left-0 bg-black m-5 mt-7 p-2 bg-opacity-10 rounded-md'>
-            <img className='text-white' src={logoutLogo} onClick={() => auth.signOut()}/>
+        <motion.div whileHover={{scale: 1.2}} className= 'bg-black p-2 bg-opacity-10 rounded-md text-center w-1/2'>
+            <button className='text-black' onClick={() => auth.signOut()}>Sign Out</button>
         </motion.div>
       </div>
   

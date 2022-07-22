@@ -4,12 +4,13 @@ import { auth } from '../config/firebase';
 
 function ProfilePicture() {
     const [user, loading, error] = useAuthState(auth);
+    const userHighResPhoto = user.photoURL.replace("s96-c", "s384-c", true);
     return (
     <div>
         <a class="relative block bg-black group" href="">
         <img
             class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-75  group-hover:opacity-50"
-            src={user.photoURL}
+            src={userHighResPhoto}
             alt=""
         />
         <div class="relative p-8">
