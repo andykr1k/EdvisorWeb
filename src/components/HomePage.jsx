@@ -47,6 +47,25 @@ function HomePage() {
             </div>
         </div>
         </section>
+        <aside
+        class="overflow-hidden bg-[url(/src/assets/head.png)] bg-top bg-no-repeat bg-cover"
+        >
+        <div class="p-8 md:p-12 lg:px-16 lg:py-24 bg-gray-900/75">
+            <div class="max-w-lg text-center sm:text-left">
+            <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+                Follow your own path!
+            </h2>
+
+            <p
+                class="hidden max-w-md text-white/90 md:mt-6 md:text-lg md:leading-relaxed md:block"
+            >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+                officia corporis quasi doloribus iure architecto quae voluptatum beatae
+                excepturi dolores.
+            </p>
+            </div>
+        </div>
+        </aside>
         <section class="text-white bg-gray-100">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
             <div class="max-w-lg mx-auto text-center">
@@ -248,6 +267,7 @@ function HomePage() {
             </div>
         </div>
         </section>
+        
     </div>
   )
 }

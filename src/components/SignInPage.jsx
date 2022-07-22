@@ -6,7 +6,7 @@ function SignInPage() {
     <section class="relative flex flex-wrap lg:h-screen lg:items-center bg-gray-200">
     <div class="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-full">
         <img
-        class="absolute inset-0 object-cover w-full h-full"
+        class="absolute inset-0 object-fit w-full h-full"
         src={head}
         alt=""
         />
