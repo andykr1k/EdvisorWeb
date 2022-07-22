@@ -6,22 +6,22 @@ function HomePage() {
 
   return (
     <div>
-        <section className='bg-gray-100'>
+        <section className=''>
         <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
             <div class="relative z-10 lg:py-16">
                 <div class="relative h-64 sm:h-80 lg:h-full">
                 <img
-                    class="absolute inset-0 object-cover w-full h-full"
+                    class="absolute inset-0 object-cover w-full h-full rounded"
                     src={front}
                     alt="Indoors house"
                 />
                 </div>
             </div>
 
-            <div class="relative flex items-center bg-gray-600">
+            <div class="relative flex items-center bg-gray-600 rounded">
                 <span
-                class="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-gray-100 lg:block lg:-left-16"
+                class="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:block lg:-left-16"
                 ></span>
 
                 <div class="p-8 sm:p-16 lg:p-24">

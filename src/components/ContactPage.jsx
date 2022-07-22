@@ -3,18 +3,18 @@ import * as React from 'react'
 function ContactPage() {
 
   return (
-    <section class="bg-gray-100">
+    <section class="">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="grid place-items-center">
 
-        <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
+        <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 col-span-2">
             <form action="" class="space-y-4">
             <div>
-                <h1 className=' text-3xl text-gray-900'>Contact Us</h1>
+                <h1 className=' text-3xl text-gray-900 text-center'>Contact Us</h1>
             </div>
             <div>
                 <label class="sr-only" for="name">Name</label>
-                <input class="w-full p-3 text-sm border-gray-800 border-2  rounded-lg bg-transparent" placeholder="Name" type="text" id="name" />
+                <input class="w-full p-3 text-sm border-gray-500 border-2  rounded-lg bg-transparent" placeholder="Name" type="text" id="name" />
             </div>
 
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">

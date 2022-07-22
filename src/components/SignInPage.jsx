@@ -5,7 +5,7 @@ import {SignIn} from '../config/firebase'
 function SignInPage() {
 
   return (
-    <section class="relative flex flex-wrap lg:items-center bg-gray-200">
+    <section class="relative flex flex-wrap lg:items-center ">
     
     <div class="w-full px-6 py-10 lg:w-1/2 sm:px-6 lg:px-8 lg:py-32">
         <div class="max-w-lg mx-auto text-center items-center">

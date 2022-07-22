@@ -9,7 +9,7 @@ function ProfilePage() {
 
   return (
     <div className=''>
-      <div className='grid place-items-center bg-gray-200'>
+      <div className='grid place-items-center '>
         <div className='flex'>
           <ProfilePicture />
         </div>

@@ -6,3 +6,5 @@ export { default as ContactPage } from './ContactPage';
 export { default as ProfilePage } from './ProfilePage';
 export { default as ProfilePicture } from './ProfilePicture';
 export { default as AboutPage } from './AboutPage';
+export { default as UserHome } from './UserHome';
+export { default as FAQ } from './FAQ';
