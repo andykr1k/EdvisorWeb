@@ -8,6 +8,8 @@ import './App.css'
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
+  const [ loaded, setLoad ] = React.useState(false);
+
 
   return (
     <div className="App">
@@ -28,7 +30,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
       </Routes>
       <Footer />
-    </div>
+      </div>
   )
 }
 
