@@ -8,28 +8,27 @@ import './App.css'
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
-  const [ loaded, setLoad ] = React.useState(false);
 
 
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        {user ? 
-        <Route path="/" element={<UserHome />} />
-        :
-        <Route path="/" element={<HomePage />} />
-        }
-        <Route path="/contact" element={<ContactPage />} />
-        {user ? 
-        <Route path="/profile" element={<ProfilePage />} />
-        :
-        <Route path="/profile" element={<SignInPage />} />
-        }
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/faq" element={<FAQ />} />
-      </Routes>
-      <Footer />
+        <Header />
+        <Routes>
+          {user ? 
+          <Route path="/" element={<UserHome />} />
+          :
+          <Route path="/" element={<HomePage />} />
+          }
+          <Route path="/contact" element={<ContactPage />} />
+          {user ? 
+          <Route path="/profile" element={<ProfilePage />} />
+          :
+          <Route path="/profile" element={<SignInPage />} />
+          }
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/faq" element={<FAQ />} />
+        </Routes>
+        <Footer />
       </div>
   )
 }
