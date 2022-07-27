@@ -1,12 +1,12 @@
 import * as React from 'react'
 import front from '../assets/front.png'
 import head from '../assets/head.png'
-
+import { motion } from 'framer-motion'
 function HomePage() {
 
   return (
     <div>
-        <section className=''>
+        <motion.section className='' initial={{ x: '-100vw'}} animate={{x: 0}}>
         <div class="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
             <div class="relative z-10 lg:py-16">
@@ -46,7 +46,7 @@ function HomePage() {
             </div>
             </div>
         </div>
-        </section>
+        </motion.section>
         <aside
         class="overflow-hidden bg-[url(/src/assets/head.png)] bg-top bg-no-repeat bg-cover"
         >
