@@ -59,9 +59,7 @@ function HomePage() {
             <p
                 class="hidden max-w-md text-white/90 md:mt-6 md:text-lg md:leading-relaxed md:block"
             >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-                officia corporis quasi doloribus iure architecto quae voluptatum beatae
-                excepturi dolores.
+                Artificial intelligence that streamlines your college application process.
             </p>
             </div>
         </div>
@@ -72,9 +70,7 @@ function HomePage() {
             <h2 class="text-3xl font-bold text-gray-600 sm:text-4xl">Take Control of the Transfer Process!</h2>
 
             <p class="mt-4 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
-                aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur
-                saepe laborum.
+            Our solutions help students who are transferring from community college optimize their course path, allowing them to track all course information and progress, all while creating a fun and interactive process.
             </p>
             </div>
 
