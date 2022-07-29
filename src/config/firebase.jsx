@@ -1,9 +1,10 @@
 import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
-import 'firebase/compat/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { motion } from 'framer-motion';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+import { setDoc, getFirestore, doc, addDoc } from 'firebase/firestore';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCStJjbwT51Hy22xtRwzyrlX1cPI6xmWjM",
@@ -18,12 +19,12 @@ export const firebaseConfig = {
   export const app = firebase.initializeApp(firebaseConfig);
   export const auth = firebase.auth();
   export const firestore = firebase.firestore();
+  export const db = getFirestore(app);
 
 export function SignIn() {
     const signInWithGoogle = () => {
       const provider = new firebase.auth.GoogleAuthProvider();
       auth.signInWithPopup(provider);
-      console.log(auth);
     }
     return (
       <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
@@ -41,4 +42,53 @@ export function SignOut() {
       </div>
   
     )
+}
+
+export function WriteUserData() {
+  const uidUsers = "users/" + auth.currentUser.uid
+  const userDocs = doc(firestore, uidUsers)
+  const docData = {
+    name: auth.currentUser.displayName,
+    email: auth.currentUser.email,
+    uid: auth.currentUser.uid
+  }
+  setDoc(userDocs, docData, { merge: true});
+  return (
+    <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
+      <button className='text-white' onClick={WriteUserData}>Add Doc</button>
+    </motion.div>
+  )
+}
+
+export function WriteCourse() {
+  const uidUsers = "users/" + auth.currentUser.uid
+  //const course = 'courses/abbrev'
+  const userDocs = doc(firestore, uidUsers)
+  const courseDocs = doc(userDocs, 'courses/data')
+  const docData = {
+    name: "name",
+    abbrev: "abbrev",
+    gpa: "gpa",
+    units: "units"
+  }
+  setDoc(courseDocs, docData, { merge: true});
+  return (
+    <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
+      <button className='text-white' onClick={WriteCourse}>Add Course</button>
+    </motion.div>
+  )
+}
+
+export function WriteCourseData(name, abbrev, gpa, units) {
+  const uidUsers = "users/" + auth.currentUser.uid
+  const courseLocation = "courses/data"
+  const userDocs = doc(firestore, uidUsers)
+  const courseDocs = doc(userDocs, courseLocation)
+  const docData = {
+    name: name,
+    abbrev: abbrev,
+    gpa: gpa,
+    units: units
+  }
+  setDoc(courseDocs, docData, { merge: true});
 }

@@ -8,3 +8,4 @@ export { default as ProfilePicture } from './ProfilePicture';
 export { default as AboutPage } from './AboutPage';
 export { default as UserHome } from './UserHome';
 export { default as FAQ } from './FAQ';
+export { default as AddCourseForm } from './AddCourseForm';
