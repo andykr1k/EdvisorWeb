@@ -9,3 +9,5 @@ export { default as AboutPage } from './AboutPage';
 export { default as UserHome } from './UserHome';
 export { default as FAQ } from './FAQ';
 export { default as AddCourseForm } from './AddCourseForm';
+export { default as CourseCard } from './CourseCard';
+export { default as CourseSection } from './CourseSection';
