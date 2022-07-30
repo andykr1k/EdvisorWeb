@@ -28,7 +28,7 @@ function ProfilePage() {
           </div>
         </div>
         <div className=''>
-          <h1 className='text-black text-3xl'>Courses</h1>
+          <h1 className='text-black text-3xl underline'>Courses</h1>
           <h2 className='text-slate-500 text-3xl'>Current</h2>
           <h2 className='text-slate-500 text-3xl'>Completed</h2>
         </div>
