@@ -5,18 +5,26 @@ import {SignOut, WriteUserData, auth, WriteCourse } from '../config/firebase'
 
 function ProfilePage() {
   const [user, loading, error] = useAuthState(auth);
-
+  const [addCourse, setaddCourse] = React.useState(false)
   return (
     <div className=''>
       <div className='grid place-items-center'>
         <div className='md:flex'>
           <ProfilePicture />
           <div className='grid m-auto'>
+          <h1 className='text-black'>Test</h1>
           <WriteUserData />
           <WriteCourse />
           </div>
           <div className='m-auto p-5'>
+          { addCourse ? 
+          <div className='grid place-items-center'>
           <AddCourseForm />
+          <button className='bg-black bg-opacity-5 p-5 rounded-full' onClick={() => setaddCourse(!addCourse)} >Close</button>
+          </div>
+          :
+          <button className='bg-black bg-opacity-5 p-5 rounded-full' onClick={() => setaddCourse(!addCourse)} >Add Course</button>
+          }
           </div>
         </div>
         <div className=''>
