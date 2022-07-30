@@ -10,7 +10,7 @@ function UserHome() {
 
     <div class="max-w-5xl px-4 py-8 mx-auto">
     <section class="p-8 bg-gray-100 rounded-lg">
-        <div class="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
+        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 sm:items-center">
         <div class="relative">
             <div class="aspect-w-1 aspect-h-1">
             <img
@@ -21,10 +21,10 @@ function UserHome() {
             </div>
         </div>
         <div className='grid'>
-        <p class="text-xl font-medium sm:text-2xl text-gray-800">
+        <p class="text-2xl text-gray-800">
             Welcome Back,
         </p>
-        <p class="text-xl font-medium sm:text-2xl text-gray-800">
+        <p class="font-medium text-4xl text-gray-800">
         {auth.currentUser.displayName}
         </p>
         </div>

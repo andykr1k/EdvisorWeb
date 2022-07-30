@@ -9,7 +9,7 @@ function ProfilePage() {
   return (
     <div className=''>
       <div className='grid place-items-center'>
-        <div className='flex'>
+        <div className='md:flex'>
           <ProfilePicture />
           <div className='grid m-auto'>
           <WriteUserData />
@@ -18,6 +18,11 @@ function ProfilePage() {
           <div className='m-auto p-5'>
           <AddCourseForm />
           </div>
+        </div>
+        <div className=''>
+          <h1 className='text-black text-3xl'>Courses</h1>
+          <h2 className='text-slate-500 text-3xl'>Current</h2>
+          <h2 className='text-slate-500 text-3xl'>Completed</h2>
         </div>
           <div class="mt-4 w-1/3 m-auto p-5">
             <SignOut />

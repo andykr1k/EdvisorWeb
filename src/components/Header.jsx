@@ -10,12 +10,9 @@ function Header() {
     <header class="bg-gray-50">
         <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8"> 
             { user ? 
-                <div class="flex items-center sm:justify-between sm:gap-4">
-                    <div
-                        class="flex items-center justify-between flex-1 gap-8 sm:justify-end"
-                    >
+                <div class="flex items-center ">
+                    <div class="flex items-center justify-between flex-1 gap-8 ">
                         <div class="flex gap-4">
-                        
                         <a
                             href="/"
                             class="block p-2.5 text-gray-600 bg-white rounded-lg hover:text-gray-700 shrink-0 shadow-sm"
@@ -103,7 +100,7 @@ function Header() {
             { user ?
             <div></div>
             :
-            <div class="mt-8">
+            <div class="">
                 <div className='flex items-center'>
                     <div class="relative">
                         <motion.a href="/"><motion.img whileHover={{scale:1.2}} className=' pr-4 w-24 md:w-36' src={logo}/></motion.a>

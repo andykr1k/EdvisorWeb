@@ -2,11 +2,10 @@ import * as React from 'react'
 import { WriteCourseData } from '../config/firebase'
 
 function AddCourseForm() {
-    const [courseName, setCourseName] = React.useState('')
-    const [courseAbbrev, setCourseAbbrev] = React.useState('')
-    const [courseGpa, setCourseGpa] = React.useState('')
-    const [courseUnits, setCourseUnits] = React.useState('')
-
+    var [courseName, setCourseName] = React.useState('')
+    var [courseAbbrev, setCourseAbbrev] = React.useState('')
+    var [courseGpa, setCourseGpa] = React.useState('')
+    var [courseUnits, setCourseUnits] = React.useState('')
   return (
     <div className=''>
         <form className='grid'>

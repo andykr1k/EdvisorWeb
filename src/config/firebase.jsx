@@ -55,7 +55,7 @@ export function WriteUserData() {
   setDoc(userDocs, docData, { merge: true});
   return (
     <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
-      <button className='text-white' onClick={WriteUserData}>Add Doc</button>
+      <button className='text-white' onClick={WriteUserData}>Create DB</button>
     </motion.div>
   )
 }
@@ -81,14 +81,13 @@ export function WriteCourse() {
 
 export function WriteCourseData(name, abbrev, gpa, units) {
   const uidUsers = "users/" + auth.currentUser.uid
-  const courseLocation = "courses/data"
   const userDocs = doc(firestore, uidUsers)
-  const courseDocs = doc(userDocs, courseLocation)
+  const courseDocs = doc(userDocs, 'courses/data')
   const docData = {
     name: name,
     abbrev: abbrev,
     gpa: gpa,
     units: units
   }
-  setDoc(courseDocs, docData, { merge: true});
+  setDoc(courseDocs, docData);
 }
