@@ -7,7 +7,7 @@ function ProfilePage() {
   const [user, loading, error] = useAuthState(auth);
   const [addCourse, setaddCourse] = React.useState(false)
   return (
-    <div className='m-5'>
+    <div className='m-10'>
       <div className='grid place-items-start'>
         <div className='md:flex'>
             <ProfilePicture />
