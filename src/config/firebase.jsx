@@ -4,7 +4,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { motion } from 'framer-motion';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import { setDoc, getFirestore, doc, addDoc } from 'firebase/firestore';
+import { setDoc, getFirestore, doc, addDoc, collection } from 'firebase/firestore';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCStJjbwT51Hy22xtRwzyrlX1cPI6xmWjM",
@@ -60,34 +60,23 @@ export function WriteUserData() {
   )
 }
 
-export function WriteCourse() {
-  const uidUsers = "users/" + auth.currentUser.uid
-  //const course = 'courses/abbrev'
-  const userDocs = doc(firestore, uidUsers)
-  const courseDocs = doc(userDocs, 'courses/data')
-  const docData = {
-    name: "name",
-    abbrev: "abbrev",
-    gpa: "gpa",
-    units: "units"
-  }
-  setDoc(courseDocs, docData, { merge: true});
-  return (
-    <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
-      <button className='text-white' onClick={WriteCourse}>Add Course</button>
-    </motion.div>
-  )
+
+export function WriteCourseData(name, abbrev, gpa, units, current, complete, path) {
+  const pathString = "users/" + auth.currentUser.uid + '/courses/test'
+    const docRef = {
+     name: name, 
+     abbrev: abbrev,
+     units: units,
+     gpa: gpa,
+     current: true,
+     complete: false,
+     path: path
+    };
+    setDoc(doc(db, pathString), docRef);
+    console.log("Document written with ID: ", docRef.id);
 }
 
-export function WriteCourseData(name, abbrev, gpa, units) {
-  const uidUsers = "users/" + auth.currentUser.uid
-  const userDocs = doc(firestore, uidUsers)
-  const courseDocs = doc(userDocs, 'courses/data')
-  const docData = {
-    name: name,
-    abbrev: abbrev,
-    gpa: gpa,
-    units: units
-  }
-  setDoc(courseDocs, docData);
+export function deleteDoc(abbrev){
+  const pathString = "users/" + auth.currentUser.uid + '/courses/'
+  deleteDoc(doc(db, pathString, "test"));
 }
