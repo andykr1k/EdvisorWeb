@@ -22,7 +22,7 @@ function CourseSection() {
     const [pathCourses] = useCollectionData(pathQuery, { idField: 'abbrev' });
 
   return (
-    <div className='grid place-items-center'>
+    <div className='grid'>
         <div className='flex-shrink-0 overflow-x-auto w-11/12'>
             <h2 className='text-slate-500 text-xl md:text-3xl m-2'>Current Courses</h2>
 
