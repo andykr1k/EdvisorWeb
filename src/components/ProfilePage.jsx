@@ -11,11 +11,11 @@ function ProfilePage() {
       <div className='grid place-items-center'>
         <div className='md:flex'>
             <ProfilePicture />
-          <div className='grid m-auto'>
+          {/* <div className='grid m-auto'>
             <h1 className='text-black'>Test</h1>
             <WriteUserData />
             <WriteCourse />
-          </div>
+          </div> 
           <div className='m-auto p-5'>
             { addCourse ? 
             <div className='grid place-items-center'>
@@ -27,7 +27,8 @@ function ProfilePage() {
               <button className='bg-black bg-opacity-5 p-5 rounded-full' onClick={() => setaddCourse(!addCourse)} >Add Course</button>
             </div>
             }
-          </div>
+          </div>*/}
+
         </div>
         <div>
           <CourseSection />
