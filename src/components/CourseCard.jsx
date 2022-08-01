@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { deleteDoc } from '../config/firebase'
 function CourseCard(props) {
-const { gpa, name, abbrev } = props;
+const { gpa, name, abbrev, units } = props;
 
   return (
     <div className=' m-2 shrink-0'>
@@ -41,9 +41,14 @@ const { gpa, name, abbrev } = props;
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h6m-6 0H6" />
                 </svg>
               </button>
-              <span class="rounded-full px-3 py-2 bg-green-100 text-green-600 font-medium text-xs">
-                GPA:{gpa}
+              <div>
+                <span class="rounded-full px-3 py-2 bg-green-100 text-green-600 font-medium text-xs">
+                GPA: {gpa}
                 </span>
+                <span class="rounded-full px-3 py-2 bg-orange-100 text-orange-600 font-medium text-xs">
+                Units: {units}
+                </span>
+              </div>
             </div>
         </a>
     </div>
