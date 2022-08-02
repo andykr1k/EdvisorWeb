@@ -9,12 +9,14 @@ function ProfilePage() {
   return (
     <div className='m-10'>
       <div className='grid place-items-start'>
-        <div className=''>
+      <div className='sm:flex'>
+      <div className=''>
             <ProfilePicture />
         </div>
-        <div className=''>
+        <div className='sm:p-5'>
           <CourseSection />
         </div>
+      </div>
           <div class="mt-4 w-1/3 m-auto p-5">
             <SignOut />
           </div>

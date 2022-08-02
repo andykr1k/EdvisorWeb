@@ -7,7 +7,7 @@ const { gpa, name, abbrev, units } = props;
 
 async function deleteDocument(){
   const pathString = "users/" + auth.currentUser.uid + '/courses'
-  await deleteDoc(doc(db, pathString, "test"));
+  await deleteDoc(doc(db, pathString, "g5TK2WXExdPz0yxSntiH"));
 }
 
   return (
