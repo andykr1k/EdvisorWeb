@@ -1,12 +1,15 @@
 import * as React from 'react'
+import { doc, deleteDoc } from "firebase/firestore";
+
 function CourseCard(props) {
 
 const { gpa, name, abbrev, units } = props;
 
-function deleteDoc(abbrev){
-  const pathString = "users/" + auth.currentUser.uid + '/courses/'
-  deleteDoc(doc(db, pathString, "test"));
+async function deleteDocument(){
+  const pathString = "users/" + auth.currentUser.uid + '/courses'
+  await deleteDoc(doc(db, pathString, "test"));
 }
+
   return (
     <div className=' m-2 shrink-0'>
     
@@ -40,16 +43,16 @@ function deleteDoc(abbrev){
             </div>
         </div>
         <div className='flex justify-between mt-4'>
-            <button class="p-1 text-white bg-red-300 rounded-full" type="button" onClick={() => deleteDoc(abbrev)}>
+            <button class="p-1 text-white bg-red-300 rounded-full" type="button" onClick={() => deleteDocument()}>
                 <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h6m-6 0H6" />
                 </svg>
               </button>
               <div>
-                <span class="rounded-full px-3 py-2 bg-green-100 text-green-600 font-medium text-xs">
+                <span class="rounded-full px-3 py-2 bg-green-100 text-green-600 font-medium text-xs ml-1">
                 GPA: {gpa}
                 </span>
-                <span class="rounded-full px-3 py-2 bg-orange-100 text-orange-600 font-medium text-xs">
+                <span class="rounded-full px-3 py-2 bg-orange-100 text-orange-600 font-medium text-xs ml-1">
                 Units: {units}
                 </span>
               </div>
