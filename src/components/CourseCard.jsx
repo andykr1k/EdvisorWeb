@@ -1,12 +1,16 @@
 import * as React from 'react'
-import { deleteDoc } from '../config/firebase'
 function CourseCard(props) {
+
 const { gpa, name, abbrev, units } = props;
 
+function deleteDoc(abbrev){
+  const pathString = "users/" + auth.currentUser.uid + '/courses/'
+  deleteDoc(doc(db, pathString, "test"));
+}
   return (
     <div className=' m-2 shrink-0'>
     
-        <a class="relative block p-8 border border-gray-100 shadow-md rounded-xl" href="">
+        <a class="relative block p-4 border border-gray-100 shadow-md rounded-xl" href="">
         
             <svg
                 xmlns="http://www.w3.org/2000/svg"

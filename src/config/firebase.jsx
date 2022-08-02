@@ -25,6 +25,7 @@ export function SignIn() {
     const signInWithGoogle = () => {
       const provider = new firebase.auth.GoogleAuthProvider();
       auth.signInWithPopup(provider);
+      WriteUserData();
     }
     return (
       <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
@@ -44,7 +45,7 @@ export function SignOut() {
     )
 }
 
-export function WriteUserData() {
+ function WriteUserData() {
   const uidUsers = "users/" + auth.currentUser.uid
   const userDocs = doc(firestore, uidUsers)
   const docData = {
@@ -53,30 +54,16 @@ export function WriteUserData() {
     uid: auth.currentUser.uid
   }
   setDoc(userDocs, docData, { merge: true});
-  return (
-    <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
-      <button className='text-white' onClick={WriteUserData}>Create DB</button>
-    </motion.div>
-  )
-}
-
-
-export function WriteCourseData(name, abbrev, gpa, units, current, complete, path) {
-  const pathString = "users/" + auth.currentUser.uid + '/courses/test'
-    const docRef = {
-     name: name, 
-     abbrev: abbrev,
-     units: units,
-     gpa: gpa,
-     current: true,
-     complete: false,
-     path: path
-    };
-    setDoc(doc(db, pathString), docRef);
-    console.log("Document written with ID: ", docRef.id);
-}
-
-export function deleteDoc(abbrev){
   const pathString = "users/" + auth.currentUser.uid + '/courses/'
-  deleteDoc(doc(db, pathString, "test"));
+  const user = doc(firestore, pathString)
+  const doc = {
+    name: "Intro to Edvisor", 
+      abbrev: "INTRO100",
+      units: 1.0,
+      gpa: 4.0,
+      current: true,
+      complete: false,
+      path: false
+  }
+  setDoc(user, doc);
 }

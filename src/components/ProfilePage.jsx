@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { ProfilePicture, CourseSection } from '../components'
 import { useAuthState } from 'react-firebase-hooks/auth';
-import {SignOut, WriteUserData, auth } from '../config/firebase'
+import {SignOut, auth } from '../config/firebase'
 
 function ProfilePage() {
   const [user, loading, error] = useAuthState(auth);
@@ -11,10 +11,6 @@ function ProfilePage() {
       <div className='grid place-items-start'>
         <div className=''>
             <ProfilePicture />
-           {/* <div className='grid m-auto'>
-            <h1 className='text-black'>Test</h1>
-            <WriteUserData />
-          </div>  */}
         </div>
         <div className=''>
           <CourseSection />
