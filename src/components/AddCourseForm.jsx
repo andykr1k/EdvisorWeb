@@ -62,7 +62,7 @@ function AddCourseForm() {
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick={false}
-              rtl={false}
+              rtl
               pauseOnFocusLoss
               draggable
               pauseOnHover
