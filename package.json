@@ -16,6 +16,7 @@
     "react-firebase-hooks": "^5.0.3",
     "react-router-dom": "^6.3.0",
     "react-spinners": "^0.13.3",
+    "react-toastify": "^9.0.7",
     "victory": "^36.5.3"
   },
   "devDependencies": {

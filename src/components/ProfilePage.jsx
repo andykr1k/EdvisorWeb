@@ -18,7 +18,7 @@ function ProfilePage() {
         <div className='mt-5 place-items-start'>
           <CourseSection />
         </div>
-          <div class="mt-4 w-1/3 m-auto p-5">
+          <div class="mt-4 w-1/2 sm:w-1/3 m-auto p-5">
             <SignOut />
           </div>
       </div>

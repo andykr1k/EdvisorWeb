@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { auth, firestore, db } from '../config/firebase'
 import { writeBatch, setDoc, collection, addDoc, doc } from 'firebase/firestore';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function AddCourseForm() {
     const courseUserPath = "users/" + auth.currentUser.uid
@@ -10,6 +12,17 @@ function AddCourseForm() {
     var [courseAbbrev, setCourseAbbrev] = React.useState('')
     var [courseGpa, setCourseGpa] = React.useState('')
     var [courseUnits, setCourseUnits] = React.useState('')
+
+    const notify = () => toast.success("Created New Course: "+ courseAbbrev +"!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
+
 
      const WriteCourseData = async(e) => {
       e.preventDefault();
@@ -41,7 +54,19 @@ function AddCourseForm() {
             <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="id" placeholder='Course ID' onChange={ (e) => setCourseAbbrev(e.target.value) }></input>
             <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="units" placeholder='Course Units' onChange={ (e) => setCourseUnits(e.target.value) }></input>
             <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="gpa" placeholder='GPA' onChange={ (e) => setCourseGpa(e.target.value) }></input>
-            <button type='submit' className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded bg-slate-300'>Submit</button>
+            <button type='submit' className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded bg-slate-300' onClick={notify}>Submit</button>
+            <ToastContainer 
+              position="top-right"
+              autoClose={5000}
+              theme="dark"
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick={false}
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
         </form>
     </div>
   )
