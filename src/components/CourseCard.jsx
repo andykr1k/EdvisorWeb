@@ -1,13 +1,13 @@
 import * as React from 'react'
-import { doc, deleteDoc } from "firebase/firestore";
+import { doc, deleteDoc, collection } from "firebase/firestore";
 
 function CourseCard(props) {
 
 const { gpa, name, abbrev, units } = props;
 
-async function deleteDocument(){
-  const pathString = "users/" + auth.currentUser.uid + '/courses'
-  await deleteDoc(doc(db, pathString, "g5TK2WXExdPz0yxSntiH"));
+ const deleteDocument = (id) => {
+  const pathString = "users/" + auth.currentUser.uid + '/courses/'
+  delete(doc(db, pathString, "djEbqg7DIQlKIudnI5F2"));
 }
 
   return (
@@ -43,7 +43,7 @@ async function deleteDocument(){
             </div>
         </div>
         <div className='flex justify-between mt-4'>
-            <button class="p-1 text-white bg-red-300 rounded-full" type="button" onClick={() => deleteDocument()}>
+            <button class="p-1 text-white bg-red-300 rounded-full" type="button" onClick={() => deleteDocument("djEbqg7DIQlKIudnI5F2")}>
                 <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h6m-6 0H6" />
                 </svg>
