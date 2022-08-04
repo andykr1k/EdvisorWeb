@@ -21,7 +21,7 @@ function ProfilePage() {
         <div className='m-auto place-items-center'>
           <OffPageAdd />
         </div>
-          <div class="mt-4 w-1/2 sm:w-1/3 m-auto p-5">
+          <div class="w-1/2 sm:w-1/3 m-auto p-5">
             <SignOut />
           </div>
       </div>

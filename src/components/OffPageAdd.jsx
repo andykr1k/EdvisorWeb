@@ -13,7 +13,7 @@ function OffCanvasExample({ name, ...props }) {
 
   return (
     <>
-      <Button variant="secondary" class="btn btn-outline-secondary" onClick={handleShow} className="me-2">
+      <Button variant="secondary" class="btn btn-secondary-outline btn-outline-secondary" onClick={handleShow}>
         {name}
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
@@ -22,6 +22,9 @@ function OffCanvasExample({ name, ...props }) {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <AddCourseForm />
+          <button class="w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded-full bg-red-500" onClick={handleClose}>
+            Close
+          </button>
         </Offcanvas.Body>
       </Offcanvas>
     </>
