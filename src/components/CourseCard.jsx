@@ -11,7 +11,7 @@ const pathString = "users/" + auth.currentUser.uid + '/courses'
 const coursesRef = firestore.collection(pathString);
 
 const deleteDocument = () => {
-  coursesRef.where("name", "==", name).get().then(querySnapshot => {querySnapshot.docs[0].ref.delete();});
+  firebase.firestore().doc('users/rN8mTD2YX5g1W8RGZwU1EsAzaD03/courses/g5TK2WXExdPz0yxSntiH').delete();
   console.log("Document written with ID: ");
 }
   return (

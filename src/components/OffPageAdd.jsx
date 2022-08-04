@@ -4,6 +4,7 @@ import { AddCourseForm } from '../components'
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { motion } from 'framer-motion'
 
 function OffCanvasExample({ name, ...props }) {
   const [show, setShow] = React.useState(false);
@@ -13,11 +14,11 @@ function OffCanvasExample({ name, ...props }) {
 
   return (
     <>
-      <Button variant="secondary" class="btn btn-secondary-outline btn-outline-secondary" onClick={handleShow}>
-        {name}
-      </Button>
+      <motion.button whileHover={{scale:1.2, color: 'lightblue'}} class="w-full p-3 mt-1 text-sm border-2 border-gray-600 rounded-md" onClick={handleClose}>
+          {name}
+      </motion.button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header>
           <Offcanvas.Title></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
