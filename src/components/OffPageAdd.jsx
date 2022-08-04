@@ -14,7 +14,7 @@ function OffCanvasExample({ name, ...props }) {
 
   return (
     <>
-      <motion.button whileHover={{scale:1.2, color: 'lightblue'}} class="w-full p-3 mt-1 text-sm border-2 border-gray-600 rounded-md" onClick={handleClose}>
+      <motion.button whileHover={{scale:1.2, color: 'lightblue'}} class="w-full p-3 mt-1 text-sm border-2 border-gray-600 rounded-md" onClick={handleShow}>
           {name}
       </motion.button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
