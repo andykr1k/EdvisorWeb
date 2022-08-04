@@ -1,18 +1,22 @@
 import * as React from 'react'
 import { doc, deleteDoc, collection } from "firebase/firestore";
+import { auth, firestore, db } from '../config/firebase'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function CourseCard(props) {
 
 const { gpa, name, abbrev, units } = props;
+const pathString = "users/" + auth.currentUser.uid + '/courses'
+const coursesRef = firestore.collection(pathString);
 
- const deleteDocument = (id) => {
-  const pathString = "users/" + auth.currentUser.uid + '/courses/'
-  delete(doc(db, pathString, "djEbqg7DIQlKIudnI5F2"));
+const deleteDocument = () => {
+  coursesRef.where("name", "==", name).get().then(querySnapshot => {querySnapshot.docs[0].ref.delete();});
+  console.log("Document written with ID: ");
 }
-
   return (
     <div className=' m-2 shrink-0'>
-    
+      
         <a class="relative block p-4 border border-gray-100 shadow-md rounded-xl" href="">
         
             <svg
@@ -43,7 +47,7 @@ const { gpa, name, abbrev, units } = props;
             </div>
         </div>
         <div className='flex justify-between mt-4'>
-            <button class="p-1 text-white bg-red-300 rounded-full" type="button" onClick={() => deleteDocument("djEbqg7DIQlKIudnI5F2")}>
+            <button class="p-1 text-white bg-red-300 rounded-full" type="button" id='delete' onClick={() => deleteDocument()}>
                 <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h6m-6 0H6" />
                 </svg>
