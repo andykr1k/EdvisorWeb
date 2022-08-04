@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ProfilePicture, CourseSection, UserCharts } from '../components'
+import { ProfilePicture, CourseSection, UserCharts, AddCourseForm, OffPageAdd } from '../components'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import {SignOut, auth } from '../config/firebase'
 
@@ -18,6 +18,9 @@ function ProfilePage() {
         <div className='mt-5 place-items-start'>
           <CourseSection />
         </div>
+        <div className='m-auto place-items-center'>
+          <OffPageAdd />
+        </div>
           <div class="mt-4 w-1/2 sm:w-1/3 m-auto p-5">
             <SignOut />
           </div>
@@ -25,5 +28,8 @@ function ProfilePage() {
     </div>
   )
 }
+
+
+
 
 export default ProfilePage

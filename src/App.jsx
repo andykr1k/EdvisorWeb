@@ -1,11 +1,13 @@
 import * as React from 'react'
 import { motion } from "framer-motion"
 import { Routes, Route } from 'react-router-dom'
-import { Header, Footer, ContactPage, HomePage, ProfilePage, SignInPage, AboutPage, UserHome, FAQ} from './components'
+import { Header, Footer, ContactPage, HomePage, ProfilePage, SignInPage, AboutPage, UserHome, FAQ, AddPage, CourseSection} from './components'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './config/firebase';
 import './App.css'
 import GridLoader from 'react-spinners/GridLoader'
+
+
 function App() {
   const [user, loading, error] = useAuthState(auth);
   const [ load, setLoad] = React.useState(false);
@@ -32,12 +34,22 @@ function App() {
             :
             <Route path="/" element={<HomePage />} />
             }
-            <Route path="/contact" element={<ContactPage />} />
             {user ? 
             <Route path="/profile" element={<ProfilePage />} />
             :
             <Route path="/profile" element={<SignInPage />} />
             }
+            {user ? 
+            <Route path="/courses" element={<CourseSection />} />
+            :
+            <Route path="/courses" element={<HomePage />} />
+            }
+            {user ? 
+              <Route path="/settings" element={<AboutPage />} />
+            :
+            <Route path="/settings" element={<HomePage />} />
+            }
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/faq" element={<FAQ />} />
           </Routes>
@@ -48,5 +60,6 @@ function App() {
       </div>
   )
 }
+
 
 export default App

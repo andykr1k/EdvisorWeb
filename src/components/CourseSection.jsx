@@ -14,7 +14,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function CourseSection() {
-    const [modalShow, setModalShow] = React.useState(false);
 
     const pathString = "users/" + auth.currentUser.uid + '/courses'
     const coursesRef = firestore.collection(pathString);
@@ -25,14 +24,9 @@ function CourseSection() {
     const [completedCourses] = useCollectionData(completeQuery, { idField: 'abbrev' });
     const [currentCourses] = useCollectionData(currentQuery, { idField: 'abbrev' });
     const [pathCourses] = useCollectionData(pathQuery, { idField: 'abbrev' });
-    const [addCourse, setaddCourse] = React.useState(false)
 
   return (
     <div className='grid m-auto'>
-    <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-              />
         <div className='flex-shrink-0 overflow-x-auto max-w-screen'>
           <div className='flex justify-between'>
           <h2 className='text-slate-500 text-xl md:text-3xl m-2'>Current Courses</h2>
@@ -53,60 +47,9 @@ function CourseSection() {
             <div className='flex flex-shrink-0 overflow-x-auto'>
             {pathCourses && pathCourses.map(course => <CourseCard gpa={course.gpa} name={course.name} abbrev={course.abbrev} units={course.units}/>)}
             </div>
-
-            <div className='m-auto'>
-              { addCourse ? 
-              <div className='grid'>
-                <AddCourseForm />
-                <button class="p-2 text-white bg-blue-600 rounded-full w-8" type="button" onClick={() => setaddCourse(!addCourse)}>
-                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h6m-6 0H6" />
-                  </svg>
-                </button>
-              </div>
-              :
-              <div className='grid'>
-              <Button variant="secondary" onClick={() => setModalShow(true)}>
-                Modal
-              </Button>
-
-                <button class="p-2 text-white bg-blue-600 rounded-full w-8" type="button" onClick={() => setaddCourse(!addCourse)}>
-                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                  </svg>
-                </button>
-              </div>
-              }
-            </div>
         </div>
     </div>
   )
-}
-
-function MyVerticallyCenteredModal(props) {
-  return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Add New Course
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-            <input className='' id="name" placeholder='Course Name' onChange={ (e) => setCourseName(e.target.value) }></input>
-            <input className='' id="id" placeholder='Course ID' onChange={ (e) => setCourseAbbrev(e.target.value) }></input>
-            <input className='' id="units" placeholder='Course Units' onChange={ (e) => setCourseUnits(e.target.value) }></input>
-            <input className='' id="gpa" placeholder='GPA' onChange={ (e) => setCourseGpa(e.target.value) }></input>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
 }
 
 export default CourseSection

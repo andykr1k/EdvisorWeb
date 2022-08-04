@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { auth, firestore, db } from '../config/firebase'
-import { writeBatch, setDoc, collection, addDoc, doc } from 'firebase/firestore';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function AddCourseForm() {
+    const [modalShow, setModalShow] = React.useState(false);
 
     const courseUserPath = "users/" + auth.currentUser.uid
     const courseQueryPath = "users/" + auth.currentUser.uid + "/courses/";
@@ -50,13 +50,15 @@ function AddCourseForm() {
 
   return (
     <div className=''>
-    
+    <div className='text-center'>
+      <h1 className='text-3xl m-5 text-slate-800'>Add New Courses</h1>
+    </div>
         <form className='grid' onSubmit={WriteCourseData}>
-            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="name" placeholder='Course Name' onChange={ (e) => setCourseName(e.target.value) }></input>
-            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="id" placeholder='Course ID' onChange={ (e) => setCourseAbbrev(e.target.value) }></input>
-            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="units" placeholder='Course Units' onChange={ (e) => setCourseUnits(e.target.value) }></input>
-            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="gpa" placeholder='GPA' onChange={ (e) => setCourseGpa(e.target.value) }></input>
-            <button type='submit' className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded bg-slate-300' onClick={notify}>Submit</button>
+            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 bg-transparent rounded-full' id="name" placeholder='Course Name' onChange={ (e) => setCourseName(e.target.value) }></input>
+            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 bg-transparent rounded-full' id="id" placeholder='Course ID' onChange={ (e) => setCourseAbbrev(e.target.value) }></input>
+            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 bg-transparent rounded-full' id="units" placeholder='Course Units' onChange={ (e) => setCourseUnits(e.target.value) }></input>
+            <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 bg-transparent rounded-full' id="gpa" placeholder='GPA' onChange={ (e) => setCourseGpa(e.target.value) }></input>
+            <button type='submit' className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded-full bg-slate-300' onClick={notify}>Submit</button>
             <ToastContainer 
               position="top-right"
               autoClose={5000}
