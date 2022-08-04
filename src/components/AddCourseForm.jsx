@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function AddCourseForm() {
+
     const courseUserPath = "users/" + auth.currentUser.uid
     const courseQueryPath = "users/" + auth.currentUser.uid + "/courses/";
     const coursesRef = firestore.collection('users').doc(auth.currentUser.uid).collection('courses');
@@ -49,6 +50,7 @@ function AddCourseForm() {
 
   return (
     <div className=''>
+    
         <form className='grid' onSubmit={WriteCourseData}>
             <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="name" placeholder='Course Name' onChange={ (e) => setCourseName(e.target.value) }></input>
             <input className='w-full p-3 mt-1 text-sm border-2 border-gray-200 rounded' id="id" placeholder='Course ID' onChange={ (e) => setCourseAbbrev(e.target.value) }></input>
@@ -71,6 +73,5 @@ function AddCourseForm() {
     </div>
   )
 }
-
 
 export default AddCourseForm
