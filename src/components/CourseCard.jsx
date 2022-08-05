@@ -10,13 +10,13 @@ const pathString = "users/" + auth.currentUser.uid + '/courses'
 const coursesRef = firestore.collection(pathString);
 
 const deleteDocument = () => {
-  firebase.firestore().doc('users/rN8mTD2YX5g1W8RGZwU1EsAzaD03/courses/g5TK2WXExdPz0yxSntiH').delete();
+  firebase.firestore().doc('users/rN8mTD2YX5g1W8RGZwU1EsAzaD03/courses/W7iXxYhCjOtc6gjBMavj').delete();
   console.log("Document written with ID: ");
 }
   return (
     <div className=' m-2 shrink-0'>
       
-        <a class="relative block p-4 border border-gray-100 shadow-md rounded-xl" href="">
+        <div class="relative block p-4 border border-gray-100 shadow-md rounded-xl">
           <div className="flex justify-between items-center">
           <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const deleteDocument = () => {
             Units: {units}
             </div>
         </div>
-        </a>
+        </div>
     </div>
   )
 }
