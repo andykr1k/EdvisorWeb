@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { auth, firestore, db } from '../config/firebase'
-import { ToastContainer, toast } from 'react-toastify';
 import { Button } from '@chakra-ui/react'
 import { useToast } from '@chakra-ui/react'
 
