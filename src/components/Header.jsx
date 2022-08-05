@@ -94,7 +94,6 @@ function Header() {
                         <img
                             class="object-cover w-10 h-10 rounded-full"
                             src={user.photoURL}
-                            alt="Barry Scott"
                         />
                         </a>
 
