@@ -33,25 +33,25 @@ function UserCharts() {
       </div>
       <div className='flex sm:hidden space-x-2'>
         <div className="grid place-items-center bg-black rounded-md bg-opacity-5 p-2">
-          <CircularProgress value={20} color='green.400' size='80px'>
+          <CircularProgress value={20} color='green.400' size='60px'>
               <CircularProgressLabel>20%</CircularProgressLabel>
           </CircularProgress>
           <h1>GPA</h1>
         </div>
         <div className="grid place-items-center bg-black rounded-md bg-opacity-5 p-2">
-          <CircularProgress value={50} color='orange.400' size='80px'>
+          <CircularProgress value={50} color='orange.400' size='60px'>
             <CircularProgressLabel>50%</CircularProgressLabel>
           </CircularProgress>
           <h1>Applications</h1>
         </div>
         <div className="grid place-items-center bg-black rounded-md bg-opacity-5 p-2">
-          <CircularProgress value={80} color='red.400' size='80px'>
+          <CircularProgress value={80} color='red.400' size='60px'>
             <CircularProgressLabel>80%</CircularProgressLabel>
           </CircularProgress>
           <h1>Courses</h1>
         </div>
         <div className="grid place-items-center bg-black rounded-md bg-opacity-5 p-2">
-          <CircularProgress value={50} color='blue.400' size='80px'>
+          <CircularProgress value={50} color='blue.400' size='60px'>
             <CircularProgressLabel>50%</CircularProgressLabel>
           </CircularProgress>
           <h1>Overall</h1>
