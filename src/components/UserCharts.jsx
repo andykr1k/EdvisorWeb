@@ -1,12 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
-import { VictoryPie, VictoryChart, VictoryLabel } from "victory";
+import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
 
 function UserCharts() {
   return (
-    <div className="flex mt-3 sm:mt-0 sm:ml-2 ">
-        <VictoryPie />
-        <VictoryPie />
+    <div>
+        <CircularProgress value={40} color='green.400' size='120px'>
+          <CircularProgressLabel>40%</CircularProgressLabel>
+        </CircularProgress>
     </div>
   )
 }

@@ -10,8 +10,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { motion } from 'framer-motion';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+
 
 function CourseSection() {
 

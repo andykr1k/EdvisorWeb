@@ -4,9 +4,8 @@ import { Routes, Route } from 'react-router-dom'
 import { Header, Footer, ContactPage, HomePage, ProfilePage, SignInPage, AboutPage, UserHome, FAQ, AddPage, CourseSection} from './components'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './config/firebase';
-import './App.css'
 import GridLoader from 'react-spinners/GridLoader'
-
+import './App.css'
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
