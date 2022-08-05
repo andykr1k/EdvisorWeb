@@ -9,11 +9,11 @@ function ProfilePage() {
   return (
     <div className='m-10'>
       <div className='grid'>
-        <div className='sm:flex rounded bg-slate-900 bg-opacity-5 sm:justify-between min-h-full'>
+        <div className='sm:flex rounded justify-evenly'>
           <div className='sm:grid sm:place-items-center'>
             <ProfilePicture />
           </div>
-          <div className='grid place-items-center items-center'>
+          <div className='grid place-items-center'>
             <UserCharts />
           </div>
         </div>
