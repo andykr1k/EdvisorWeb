@@ -7,7 +7,7 @@ function ProfilePage() {
   const [user, loading, error] = useAuthState(auth);
 
   return (
-    <div className='m-10'>
+    <div className='m-5'>
       <div className='grid'>
         <div className='sm:flex rounded justify-evenly'>
           <div className='sm:grid sm:place-items-center'>

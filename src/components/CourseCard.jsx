@@ -2,10 +2,11 @@ import * as React from 'react'
 import { doc, deleteDoc, collection } from "firebase/firestore";
 import { auth, firestore, db } from '../config/firebase'
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Button } from '@chakra-ui/react'
+import { useToast } from '@chakra-ui/react'
 
 function CourseCard(props) {
-
+const toast = useToast()
 const { gpa, name, abbrev, units } = props;
 const pathString = "users/" + auth.currentUser.uid + '/courses'
 const coursesRef = firestore.collection(pathString);
@@ -48,10 +49,19 @@ const deleteDocument = () => {
         </div>
         <div className='flex justify-between mt-4'>
             <button class="p-1 text-white bg-red-300 rounded-full" type="button" id='delete' onClick={() => deleteDocument()}>
-                <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h6m-6 0H6" />
-                </svg>
-              </button>
+                -
+            </button>
+            <Button className='p-1' colorScheme='teal' onClick={() =>
+              toast({
+                title: 'Course Deleted.',
+                description: "We've deleted your course.",
+                status: 'warning',
+                duration: 9000,
+                isClosable: true,
+              })
+            }>
+              -
+            </Button>
               <div>
                 <span class="rounded-full px-3 py-2 bg-green-100 text-green-600 font-medium text-xs ml-1">
                 GPA: {gpa}
