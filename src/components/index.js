@@ -14,3 +14,4 @@ export { default as CourseSection } from './CourseSection';
 export { default as UserCharts } from './UserCharts';
 export { default as AddPage } from './AddPage';
 export { default as OffCanvasExample } from './OffPageAdd';
+export { default as CoursePage } from './CoursePage';
