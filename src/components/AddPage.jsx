@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { auth, firestore, db } from '../config/firebase'
 import { AddCourseForm } from '../components'
 
 function AddPage() {

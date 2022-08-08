@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { auth, firestore, db } from '../config/firebase'
-import { Button } from '@chakra-ui/react'
-import { useToast } from '@chakra-ui/react'
+import { Button, Switch, useToast } from '@chakra-ui/react'
 
 function AddCourseForm() {
     const [modalShow, setModalShow] = React.useState(false);
@@ -14,6 +13,7 @@ function AddCourseForm() {
     var [courseAbbrev, setCourseAbbrev] = React.useState('')
     var [courseGpa, setCourseGpa] = React.useState('')
     var [courseUnits, setCourseUnits] = React.useState('')
+    var [completed, setCompleted] = React.useState(false)
 
     const WriteCourseData = async(e) => {
       e.preventDefault();
@@ -23,13 +23,13 @@ function AddCourseForm() {
           abbrev: courseAbbrev,
           units: courseUnits,
           gpa: courseGpa,
-          current: true,
-          complete: false,
+          current: !completed,
+          complete: completed,
           path: false
         })
-        console.log("Document written with ID: ");
+        console.log("Document written with ID: " + courseAbbrev );
       } catch (e) {
-        console.error("Error adding document: ", e);
+        console.error("Error adding document: " + courseAbbrev, e);
       }
 
       courseName = '';
@@ -44,6 +44,10 @@ function AddCourseForm() {
             <input className='w-full p-3 mt-3 text-sm border-2 border-gray-200 bg-transparent rounded-md' id="id" placeholder='Course ID' onChange={ (e) => setCourseAbbrev(e.target.value) }></input>
             <input className='w-full p-3 mt-3 text-sm border-2 border-gray-200 bg-transparent rounded-md' id="units" placeholder='Course Units' onChange={ (e) => setCourseUnits(e.target.value) }></input>
             <input className='w-full p-3 mt-3 text-sm border-2 border-gray-200 bg-transparent rounded-md' id="gpa" placeholder='GPA' onChange={ (e) => setCourseGpa(e.target.value) }></input>
+            <div className='flex items-center justify-between mt-3'>
+              Have you completed this course?
+              <Switch onChange={ (e) => setCompleted(!completed)}/>
+            </div>
             <Button type='submit' className='w-full p-3 mt-3 text-sm' colorScheme='teal' onClick={() =>
               toast({
                 title: 'Course created.',

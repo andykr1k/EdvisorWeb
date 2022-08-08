@@ -25,7 +25,6 @@ export function SignIn() {
     const signInWithGoogle = () => {
       const provider = new firebase.auth.GoogleAuthProvider();
       auth.signInWithPopup(provider);
-      WriteUserData();
     }
     return (
       <motion.div whileHover={{scale: 1.2}} className='bg-black p-5 bg-opacity-10 rounded-md text-center'>
@@ -45,7 +44,7 @@ export function SignOut() {
     )
 }
 
- function WriteUserData() {
+ export function WriteUserData() {
   const uidUsers = "users/" + auth.currentUser.uid
   const userDocs = doc(firestore, uidUsers)
   const docData = {
@@ -53,17 +52,5 @@ export function SignOut() {
     email: auth.currentUser.email,
     uid: auth.currentUser.uid
   }
-  setDoc(userDocs, docData, { merge: true});
-  const pathString = "users/" + auth.currentUser.uid + '/courses/'
-  const user = doc(firestore, pathString)
-  const doc = {
-    name: "Intro to Edvisor", 
-      abbrev: "INTRO100",
-      units: 1.0,
-      gpa: 4.0,
-      current: true,
-      complete: false,
-      path: false
-  }
-  setDoc(user, doc);
+  setDoc(userDocs, docData, { merge: true });
 }

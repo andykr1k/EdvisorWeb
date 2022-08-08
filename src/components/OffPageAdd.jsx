@@ -4,7 +4,7 @@ import { AddCourseForm } from '../components'
 import { motion } from 'framer-motion'
 import { Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Stack, Box, FormLabel, Input, InputGroup, InputLeftAddon, InputRightAddon, Select, Textarea, Button} from '@chakra-ui/react'
 
-export default function OffCanvasExample() {
+export default function OffPageAdd() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const firstField = React.useRef()
 

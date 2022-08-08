@@ -1,11 +1,6 @@
 import * as React from 'react'
-import { useRef, useState } from 'react';
-import { CourseCard } from '../components'
+import { CourseCard, OffPageAdd } from '../components'
 import { SignOut, auth, firestore } from '../config/firebase';
-import { setDoc, getFirestore, doc, addDoc, collection } from 'firebase/firestore';
-import { AddCourseForm } from '../components'
-import firebase from 'firebase/compat/app';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { motion } from 'framer-motion';
 import 'firebase/compat/firestore';
@@ -25,10 +20,11 @@ function CourseSection() {
     const [pathCourses] = useCollectionData(pathQuery, { idField: 'abbrev' });
 
   return (
-    <div className='grid m-auto'>
+    <div className='grid m-auto bg-slate-500 rounded-md bg-opacity-5 p-2'>
         <div className='flex-shrink-0 overflow-x-auto max-w-screen'>
-          <div className='flex justify-between'>
-          <h2 className='text-slate-500 text-xl md:text-3xl m-3'>Current Courses</h2>
+          <div className='flex justify-between m-3'>
+          <h2 className='text-slate-500 text-xl md:text-3xl'>Current Courses</h2>
+          <OffPageAdd />
           </div>
             
             <div className='flex flex-shrink-0 overflow-x-auto'>

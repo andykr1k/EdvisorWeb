@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { motion } from "framer-motion"
 import { Routes, Route } from 'react-router-dom'
-import { Header, Footer, ContactPage, HomePage, ProfilePage, SignInPage, AboutPage, UserHome, FAQ, AddPage, CourseSection, CoursePage} from './components'
+import { Header, Footer, ContactPage, HomePage, ProfilePage, SignInPage, AboutPage, UserHome, FAQ, AddPage, CourseSection, CoursePage, SettingsPage} from './components'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './config/firebase';
 import GridLoader from 'react-spinners/GridLoader'
@@ -44,7 +44,7 @@ function App() {
             <Route path="/courses" element={<HomePage />} />
             }
             {user ? 
-              <Route path="/settings" element={<AboutPage />} />
+              <Route path="/settings" element={<SettingsPage />} />
             :
             <Route path="/settings" element={<HomePage />} />
             }

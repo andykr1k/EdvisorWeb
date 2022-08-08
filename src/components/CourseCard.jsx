@@ -2,7 +2,6 @@ import * as React from 'react'
 import { doc, deleteDoc, collection } from "firebase/firestore";
 import { auth, firestore, db } from '../config/firebase'
 import { Button, useToast } from '@chakra-ui/react'
-import { parsePath } from 'react-router-dom';
 
 function CourseCard(props) {
 const toast = useToast();
@@ -60,7 +59,7 @@ const deleteDocument = async (id) => {
                 </ul> */}
             </div>
         </div>
-        <div className='flex mt-1 space-x-1'>
+        <div className='flex mt-2 space-x-1'>
             <div class="rounded-md p-2 bg-green-100 text-green-600 font-medium text-xs">
             GPA: {gpa}
             </div>
