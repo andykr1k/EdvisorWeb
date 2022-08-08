@@ -23,9 +23,9 @@ const deleteDocument = async (id) => {
 }
 
   return (
-    <div className=' m-2 shrink-0'>
+    <div className='m-2 shrink-0'>
       
-        <div class="relative block p-4 border border-gray-100 shadow-md rounded-xl">
+        <div class="relative block p-3 border border-gray-100 shadow-md rounded-xl">
           <div className="flex justify-between items-center">
           <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,21 +42,25 @@ const deleteDocument = async (id) => {
                     d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
                 />
             </svg>
-            <Button colorScheme='teal' height={7} width={2} variant='link' onClick={() => deleteDocument(abbrev)}>
+            <Button 
+              colorScheme='red' 
+              height={4} 
+              width={2} 
+              variant='outline' 
+              onClick={() => deleteDocument(abbrev)}
+              className="text-center align-middle"
+            >
               -
             </Button>
           </div>
             
-        <div class="mt-2 text-gray-500 sm:pr-8">
+        <div class="mt-2 text-gray-500">
 
             <h5 class="mt-2 text-xl font-bold text-gray-900">{name}</h5>
             <div>
                 <p class="mt-2 text-sm">
                 {abbrev}
                 </p>
-                {/* <ul class='text-sm list-disc marker:text-green-500'>
-                    <li>UC Transferable</li>
-                </ul> */}
             </div>
         </div>
         <div className='flex mt-2 space-x-1'>

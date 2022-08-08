@@ -2,6 +2,8 @@ import * as React from 'react'
 import front from '../assets/front.png'
 import head from '../assets/head.png'
 import { motion } from 'framer-motion'
+import { Highlight, Heading } from '@chakra-ui/react'
+
 function HomePage() {
 
   return (
@@ -25,10 +27,14 @@ function HomePage() {
                 ></span>
 
                 <div class="p-8 sm:p-16 lg:p-24">
-                <h2 class="text-2xl text-white font-bold sm:text-3xl">
+                <Heading lineHeight='tall' class="text-2xl text-white font-bold sm:text-3xl" >
+                    <Highlight
+                        query='welcome'
+                        styles={{ px: '1', py: '1', rounded: 'full', bg: 'gray.200' }}
+                    >
                     Welcome to the next generation of tools to help further higher education.
-                </h2>
-
+                    </Highlight>
+                </Heading>
                 <p class="mt-4 text-gray-200">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
                     molestiae! Quidem est esse numquam odio deleniti, beatae, magni
