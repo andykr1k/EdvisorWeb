@@ -15,10 +15,10 @@ function AddCourseForm() {
     var [courseGpa, setCourseGpa] = React.useState('')
     var [courseUnits, setCourseUnits] = React.useState('')
 
-     const WriteCourseData = async(e) => {
+    const WriteCourseData = async(e) => {
       e.preventDefault();
       try {
-        await coursesRef.add({
+        await firestore.collection('users').doc(auth.currentUser.uid).collection('courses').doc(courseAbbrev).set({
           name: courseName, 
           abbrev: courseAbbrev,
           units: courseUnits,
@@ -36,8 +36,7 @@ function AddCourseForm() {
       courseGpa = '';
       courseUnits = '';
       courseAbbrev = '';
-  }
-
+    }
   return (
     <div className=''>
         <form className='grid' onSubmit={WriteCourseData}>
