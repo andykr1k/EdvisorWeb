@@ -46,7 +46,7 @@ export function SignOut() {
         <motion.button       
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }} 
-        className='bg-slate-500 p-5 rounded-full text-center text-white' 
+        className='bg-slate-500 p-3 rounded-md text-center text-white' 
         onClick={() => auth.signOut()}
         >
               Sign Out
