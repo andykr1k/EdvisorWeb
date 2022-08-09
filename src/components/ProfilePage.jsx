@@ -9,8 +9,8 @@ function ProfilePage() {
   return (
     <div className='m-5'>
       <div className='grid'>
-        <div className='sm:flex rounded justify-evenly'>
-          <div className='sm:grid sm:place-items-center'>
+        <div className='md:flex rounded justify-evenly'>
+          <div className='md:grid md:place-items-center'>
             <ProfilePicture />
           </div>
           <div className='grid place-items-center'>

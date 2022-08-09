@@ -16,3 +16,4 @@ export { default as AddPage } from './AddPage';
 export { default as OffPageAdd } from './OffPageAdd';
 export { default as CoursePage } from './CoursePage';
 export { default as SettingsPage } from './SettingsPage';
+export { default as SettingsModal } from './SettingsModal';

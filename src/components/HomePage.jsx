@@ -29,8 +29,8 @@ function HomePage() {
                 <div class="p-8 sm:p-16 lg:p-24">
                 <Heading lineHeight='tall' class="text-2xl text-white font-bold sm:text-3xl" >
                     <Highlight
-                        query='welcome'
-                        styles={{ px: '1', py: '1', rounded: 'full', bg: 'gray.200' }}
+                        query='generation'
+                        styles={{ px: '1', py: '1', rounded: 'md', bg: 'gray.200' }}
                     >
                     Welcome to the next generation of tools to help further higher education.
                     </Highlight>

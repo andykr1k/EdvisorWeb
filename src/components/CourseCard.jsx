@@ -44,9 +44,8 @@ const deleteDocument = async (id) => {
             </svg>
             <Button 
               colorScheme='red' 
-              height={4} 
-              width={2} 
-              variant='outline' 
+              size='xs'
+              variant='ghost' 
               onClick={() => deleteDocument(abbrev)}
               className="text-center align-middle"
             >

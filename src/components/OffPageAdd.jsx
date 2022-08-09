@@ -10,9 +10,14 @@ export default function OffPageAdd() {
 
   return (
     <>
-      <Button colorScheme='teal' onClick={onOpen}>
-        Create New Course
-      </Button>
+      <motion.button 
+        onClick={onOpen}
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }} 
+        className='bg-slate-500 p-3 rounded-full text-center text-sm text-white' 
+      >
+        Add Course
+      </motion.button>
       <Drawer
         isOpen={isOpen}
         placement='right'
