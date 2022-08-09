@@ -24,9 +24,8 @@ const deleteDocument = async (id) => {
 }
 
   return (
-    <div>
+    <div className='m-2 shrink-0' >
       <motion.button 
-        className='m-2 shrink-0' 
         whileHover={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
         onClick={onOpen}
@@ -59,23 +58,23 @@ const deleteDocument = async (id) => {
           </Button>
         </div>
           
-      <div class="mt-2 text-gray-500">
+        <div class="mt-2 text-gray-500">
 
-          <h5 class="mt-2 text-xl font-bold text-gray-900">{name}</h5>
-          <div>
-              <p class="mt-2 text-sm">
-              {abbrev}
-              </p>
-          </div>
-      </div>
-      <div className='flex mt-2 space-x-1'>
-          <div class="rounded-md p-2 bg-green-100 text-green-600 font-medium text-xs">
-          GPA: {gpa}
-          </div>
-          <div class="rounded-md p-2 bg-orange-100 text-orange-600 font-medium text-xs">
-          Units: {units}
-          </div>
-      </div>
+            <h5 class="mt-2 text-xl font-bold text-gray-900">{name}</h5>
+            <div>
+                <p class="mt-2 text-sm">
+                {abbrev}
+                </p>
+            </div>
+        </div>
+        <div className='flex mt-2 space-x-1'>
+            <div class="rounded-md p-2 bg-green-100 text-green-600 font-medium text-xs">
+            GPA: {gpa}
+            </div>
+            <div class="rounded-md p-2 bg-orange-100 text-orange-600 font-medium text-xs">
+            Units: {units}
+            </div>
+        </div>
       </div>
     </motion.button>
 
