@@ -78,7 +78,7 @@ const deleteDocument = async (id) => {
       </div>
     </motion.button>
 
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} size='sm' isCentered>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>

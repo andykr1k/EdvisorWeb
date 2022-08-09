@@ -6,8 +6,8 @@ function ProfilePicture() {
     const [user, loading, error] = useAuthState(auth);
     const userHighResPhoto = user.photoURL.replace("s96-c", "s400-c", true);
     return (
-    <div className=''>
-        <a class="relative block bg-black rounded-lg group" href="">
+    <div className='grid place-items-center'>
+        <a class="relative block max-w-lg bg-black rounded-lg group" href="">
         <img
             class="absolute inset-0 object-cover w-full rounded-lg h-full transition-opacity opacity-75  group-hover:opacity-50"
             src={userHighResPhoto}
