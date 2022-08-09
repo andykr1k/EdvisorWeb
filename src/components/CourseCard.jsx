@@ -24,7 +24,7 @@ const deleteDocument = async (id) => {
 }
 
   return (
-    <div className='m-2 shrink-0' >
+    <div className='m-2 shrink-0 ' >
       <motion.button 
         whileHover={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}

@@ -46,7 +46,7 @@ function AddCourseForm() {
             <input className='w-full p-3 mt-3 text-sm border-2 border-gray-200 bg-transparent rounded-md' id="gpa" placeholder='GPA' onChange={ (e) => setCourseGpa(e.target.value) }></input>
             <div className='flex items-center justify-between mt-3'>
               Have you completed this course?
-              <Switch onChange={ (e) => setCompleted(!completed)}/>
+              <Switch size='lg' onChange={ (e) => setCompleted(!completed)}/>
             </div>
             <Button type='submit' className='w-full p-3 mt-3 text-sm' colorScheme='teal' onClick={() =>
               toast({

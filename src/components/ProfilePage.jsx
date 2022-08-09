@@ -17,7 +17,7 @@ function ProfilePage() {
             <UserCharts />
           </div>
         </div>
-        <div className='mt-5 mb-5 place-items-start'>
+        <div className='m-3 place-items-start'>
           <CourseSection />
         </div>
       </div>
