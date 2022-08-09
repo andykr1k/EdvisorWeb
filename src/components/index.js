@@ -17,3 +17,7 @@ export { default as OffPageAdd } from './OffPageAdd';
 export { default as CoursePage } from './CoursePage';
 export { default as SettingsPage } from './SettingsPage';
 export { default as SettingsModal } from './SettingsModal';
+export { default as TOSPage } from './TOSPage';
+export { default as PrivacyPage } from './PrivacyPage';
+export { default as AccessPage } from './AccessPage';
+export { default as ReturnPage } from './ReturnPage';

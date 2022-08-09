@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer class="bg-gray-50">
         <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div>
                 <div class="flex mt-4 space-x-6 text-gray-500">
                 <motion.a whileHover={{scale:1.2, color:'rgb(236,72,153)'}} href="" target="_blank" rel="noreferrer">
@@ -33,7 +33,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3 mt-4">
+            <div class="grid grid-cols-2 gap-8 md:col-span-2 sm:grid-cols-2 md:grid-cols-3 mt-4">
                 <div className=''>
                 <p class="font-medium text-gray-600">
                     Company
@@ -41,8 +41,7 @@ function Footer() {
 
                 <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                     <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/about"> About </motion.a>
-                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/history"> History </motion.a>
-                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/jobs"> Careers </motion.a>
+                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/team"> Team </motion.a>
                 </nav>
                 </div>
 
@@ -54,7 +53,6 @@ function Footer() {
                 <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                     <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/contact"> Contact </motion.a>
                     <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/faq"> FAQs </motion.a>
-                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/chat"> Live Chat </motion.a>
                 </nav>
                 </div>
 
@@ -64,9 +62,9 @@ function Footer() {
                 </p>
 
                 <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/policy"> Privacy Policy </motion.a>
-                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/terms"> Terms & Conditions </motion.a>
-                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/returnpolicy"> Returns Policy </motion.a>
+                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/privacy"> Privacy Policy </motion.a>
+                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/tos"> Terms & Conditions </motion.a>
+                    <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/return"> Returns Policy </motion.a>
                     <motion.a whileHover={{color:'rgb(236,72,153)'}} href="/access"> Accessibility </motion.a>
                 </nav>
                 </div>
