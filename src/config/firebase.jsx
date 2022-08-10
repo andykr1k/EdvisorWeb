@@ -1,10 +1,8 @@
 import firebase from 'firebase/compat/app';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { motion } from 'framer-motion';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import { setDoc, getFirestore, doc, addDoc, collection } from 'firebase/firestore';
+import { setDoc, getFirestore, doc } from 'firebase/firestore';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCStJjbwT51Hy22xtRwzyrlX1cPI6xmWjM",
