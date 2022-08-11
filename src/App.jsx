@@ -44,7 +44,9 @@ function App() {
       </div>
     ) : (
       <div>
-        <Header />
+        <div className='sticky top-0 z-50'>
+          <Header />
+        </div>
           <Routes>
             {user ? 
             <Route path="/" element={<UserHome />} />

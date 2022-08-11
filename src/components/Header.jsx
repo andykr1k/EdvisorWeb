@@ -109,7 +109,7 @@ function Header() {
             <div class="">
                 <div className='flex items-center'>
                     <div class="relative">
-                        <motion.a href="/"><motion.img whileHover={{scale:1.2}} className=' pr-4 w-24 md:w-36' src={logo}/></motion.a>
+                        <motion.a href="/"><motion.img whileHover={{scale:1.2}} className=' pr-4 md:w-24' src={logo}/></motion.a>
                     </div>
                     <div className='grid'>
                         <h1 class="text-sm font-bold text-gray-500">
