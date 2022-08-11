@@ -8,7 +8,7 @@ function Header() {
     const [user, loading, error] = useAuthState(auth);
 
   return (
-    <header class="bg-gray-50 shadow-lg">
+    <header class="bg-gray-50/90 shadow-lg">
         <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8"> 
             { user ? 
                 <div class="flex items-center ">
@@ -106,7 +106,7 @@ function Header() {
             { user ?
             <div></div>
             :
-            <div class="">
+            <div className="">
                 <div className='flex items-center'>
                     <div class="relative">
                         <motion.a href="/"><motion.img whileHover={{scale:1.2}} className=' pr-4 md:w-24' src={logo}/></motion.a>
