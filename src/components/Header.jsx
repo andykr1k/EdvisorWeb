@@ -8,7 +8,7 @@ function Header() {
     const [user, loading, error] = useAuthState(auth);
 
   return (
-    <header class="bg-gray-50">
+    <header class="bg-gray-50 shadow-lg">
         <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8"> 
             { user ? 
                 <div class="flex items-center ">
