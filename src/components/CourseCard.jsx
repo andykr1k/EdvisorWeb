@@ -1,7 +1,18 @@
 import * as React from 'react'
 import { doc, deleteDoc, collection } from "firebase/firestore";
 import { auth, firestore, db } from '../config/firebase'
-import { useToast, Modal, ModalOverlay, ModalBody, ModalContent, ModalCloseButton, ModalFooter, ModalHeader, useDisclosure, Button} from '@chakra-ui/react'
+import { 
+  useToast, 
+  Modal, 
+  ModalOverlay, 
+  ModalBody, 
+  ModalContent, 
+  ModalCloseButton, 
+  ModalFooter, 
+  ModalHeader, 
+  useDisclosure, 
+  Button
+} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 function CourseCard(props) {
 const toast = useToast();
