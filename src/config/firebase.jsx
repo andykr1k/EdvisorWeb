@@ -2,6 +2,7 @@ import firebase from 'firebase/compat/app';
 import { motion } from 'framer-motion';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
+import googleLogo from '../assets/google_logo.png'
 import { setDoc, getFirestore, doc } from 'firebase/firestore';
 
 export const firebaseConfig = {
@@ -25,13 +26,16 @@ export function SignIn() {
       auth.signInWithPopup(provider);
     }
     return (
-      <div>
+      <div className=''>
         <motion.button       
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }} 
-        className='bg-slate-500 p-5 rounded-full text-center text-white' 
+        className='bg-slate-500 rounded-lg shadow-lg p-3 text-center text-white flex items-center' 
         onClick={signInWithGoogle}
         >
+        <div className='w-1/5 mr-2'>
+        <img src={googleLogo} />
+        </div>
           Sign In With Google
         </motion.button>
       </div>
@@ -44,7 +48,7 @@ export function SignOut() {
         <motion.button       
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }} 
-        className='bg-slate-500 p-3 rounded-md text-center text-white' 
+        className='bg-slate-500 rounded-lg shadow-lg p-3 text-center text-white' 
         onClick={() => auth.signOut()}
         >
               Sign Out

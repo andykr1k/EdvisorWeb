@@ -9,8 +9,8 @@ function UserHome() {
     return (
 
     <div class="max-w-5xl px-4 py-8 mx-auto">
-    <section class="p-8 bg-gray-100 rounded-lg">
-        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 sm:items-center">
+    <section class="p-8 bg-slate-500 bg-opacity-5 rounded-lg shadow-lg">
+        <div class="grid place-items-center">
         <div class="relative">
             <div class="aspect-w-1 aspect-h-1">
             <img

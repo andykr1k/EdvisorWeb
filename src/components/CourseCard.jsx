@@ -30,7 +30,7 @@ const deleteDocument = async (id) => {
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
         onClick={onOpen}
       >
-      <div class="relative block p-3 border border-gray-100 shadow-md rounded-xl">
+      <div class="relative block p-3 border border-gray-100 rounded-lg shadow-md">
         <div className="flex justify-between items-center">
         <svg
               xmlns="http://www.w3.org/2000/svg"

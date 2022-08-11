@@ -14,7 +14,7 @@ export default function OffPageAdd() {
         onClick={onOpen}
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }} 
-        className='bg-slate-500 p-3 rounded-full text-center text-sm text-white' 
+        className='bg-slate-500 rounded-lg shadow-lg p-3 text-center text-sm text-white' 
       >
         Add Course
       </motion.button>

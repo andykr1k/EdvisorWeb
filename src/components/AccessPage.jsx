@@ -3,7 +3,7 @@ import * as React from 'react'
 function AccessPage() {
 
   return (
-    <div className='m-10 text-lg space-y-3 bg-slate-500 bg-opacity-5 p-3 rounded-md'>
+    <div className='m-10 text-lg space-y-3 bg-slate-500 bg-opacity-5 rounded-lg shadow-lg p-3'>
       <div >
                 <h1><strong>Accessibility Statement</strong></h1>
                 <p class="h5 fw300 doc-websiteUrl">URL: <a href="edvisorapp.com" target="_blank">edvisorapp.com</a></p>
