@@ -3,7 +3,7 @@ import * as React from 'react'
 function TOSPage() {
 
   return (
-    <div className='m-10 text-lg space-y-3 bg-slate-500 bg-opacity-5 p-3 rounded-md'>
+    <div className='m-10 text-lg space-y-3 bg-slate-500 rounded-lg shadow-lg bg-opacity-5 p-3'>
       <h2><strong>Terms and Conditions</strong></h2>
 
         <p>Welcome to Edvisor!</p>

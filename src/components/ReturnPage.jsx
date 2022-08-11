@@ -3,7 +3,7 @@ import * as React from 'react'
 function ReturnPage() {
 
   return (
-    <div className='m-10 text-lg space-y-3 bg-slate-500 bg-opacity-5 p-3 rounded-md'>
+    <div className='m-10 text-lg space-y-3 bg-slate-500 rounded-lg shadow-lg bg-opacity-5 p-3'>
       <h1><strong>Return and Refund Policy</strong></h1>
         <p>Last updated: August 09, 2022</p>
         <p>Thank you for shopping at Edvisor.</p>
