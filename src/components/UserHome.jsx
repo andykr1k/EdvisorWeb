@@ -8,26 +8,26 @@ function UserHome() {
 
     return (
 
-    <div class="max-w-5xl px-4 py-8 mx-auto">
+    <div class="max-w-xl px-4 py-8 mx-auto">
     <section class="p-8 bg-slate-500 bg-opacity-5 rounded-lg shadow-lg">
-        <div class="grid place-items-center">
-        <div class="relative">
-            <div class="aspect-w-1 aspect-h-1">
-            <img
-                src={userHighResPhoto}
-                alt=""
-                class="object-cover rounded-lg"
-            />
+        <div class="grid">
+            <div class="relative place-items-center">
+                <div class="aspect-w-1 aspect-h-1">
+                <img
+                    src={userHighResPhoto}
+                    alt=""
+                    class="object-cover rounded-lg"
+                />
+                </div>
             </div>
-        </div>
-        <div className='grid'>
-        <p class="text-2xl text-gray-800">
-            Welcome Back,
-        </p>
-        <p class="font-medium text-4xl text-gray-800">
-        {auth.currentUser.displayName}
-        </p>
-        </div>
+            <div className='grid place-items-center'>
+                <p class="text-2xl text-gray-800">
+                    Welcome Back,
+                </p>
+                <p class="font-medium text-4xl text-gray-800">
+                {auth.currentUser.displayName}
+                </p>
+            </div>
 
         </div>
     </section>
