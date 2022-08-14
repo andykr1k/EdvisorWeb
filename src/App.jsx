@@ -76,7 +76,9 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/faq" element={<FAQ />} />
           </Routes>
+          <div className='bottom-0 z-50'>
           <Footer />
+        </div>
         </div>
       )
     }
