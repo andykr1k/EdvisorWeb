@@ -10,7 +10,7 @@ function UserHome() {
 
     <div class="max-w-xl px-4 py-8 mx-auto">
     <section class="p-8 bg-slate-500 bg-opacity-5 rounded-lg shadow-lg">
-        <div class="grid">
+        <div class="grid place-items-center">
             <div class="relative place-items-center">
                 <div class="aspect-w-1 aspect-h-1">
                 <img
@@ -22,7 +22,7 @@ function UserHome() {
             </div>
             <div className='grid place-items-center'>
                 <p class="text-2xl text-gray-800">
-                    Welcome Back,
+                    Welcome Back
                 </p>
                 <p class="font-medium text-4xl text-gray-800">
                 {auth.currentUser.displayName}
