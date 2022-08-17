@@ -12,8 +12,9 @@ function AllCoursesSection() {
     const [allCourses] = useCollectionData(coursesRef, { idField: 'abbrev' });
 
   return (
-    <div class="overflow-x-auto  bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-2">
-      <h2 className='text-slate-500 text-xl md:text-3xl m-4'>All Courses</h2>
+    <div className="bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-2">
+      <h2 className='text-slate-500 text-xl md:text-3xl  m-3'>All Courses</h2>
+      <div class="overflow-x-auto">
         <table class="min-w-full text-sm divide-y divide-gray-200">
           <thead>
             <tr>
@@ -134,6 +135,8 @@ function AllCoursesSection() {
           </tbody>
         </table>
       </div>
+    </div>
+    
   )
 }
 
