@@ -4,34 +4,16 @@ import { SignOut, auth } from '../config/firebase';
 function SettingsPage() {
 
   return (
-    <div>
+    <div className="m-2">
     <div class="flow-root">
       <nav class="flex flex-col -my-2 divide-y divide-gray-100">
         <ul class="py-2">
           <li>
             <a
               href=""
-              class="block px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg"
-            >
-              Profile
-            </a>
-          </li>
-
-          <li>
-            <a
-              href=""
               class="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
             >
-              Progress
-            </a>
-          </li>
-
-          <li>
-            <a
-              href=""
-              class="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
-            >
-              Courses
+              Light Mode
             </a>
           </li>
 
@@ -53,7 +35,7 @@ function SettingsPage() {
               href=""
               class="block px-4 py-2 text-sm font-medium text-gray-500 rounded-lg hover:bg-gray-100 hover:text-gray-700"
             >
-              Settings
+              Account Settings
             </a>
           </li>
         </ul>

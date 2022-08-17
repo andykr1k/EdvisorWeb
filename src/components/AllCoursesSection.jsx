@@ -10,7 +10,6 @@ function AllCoursesSection() {
     const pathString = "users/" + auth.currentUser.uid + '/courses'
     const coursesRef = firestore.collection(pathString);
     const [allCourses] = useCollectionData(coursesRef, { idField: 'abbrev' });
-
   return (
     <div className="bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-2">
       <h2 className='text-slate-500 text-xl md:text-3xl  m-3'>All Courses</h2>
@@ -20,7 +19,7 @@ function AllCoursesSection() {
             <tr>
               <th class="p-4 font-medium text-left text-gray-900 whitespace-nowrap">
                 <div class="flex items-center">
-                  Abbreviation
+                  Course ID
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="w-4 h-4 ml-1.5 text-gray-700"
