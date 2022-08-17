@@ -22,3 +22,4 @@ export { default as PrivacyPage } from './PrivacyPage';
 export { default as AccessPage } from './AccessPage';
 export { default as ReturnPage } from './ReturnPage';
 export { default as AllCoursesSection } from './AllCoursesSection';
+export { default as TeamPage } from './TeamPage';

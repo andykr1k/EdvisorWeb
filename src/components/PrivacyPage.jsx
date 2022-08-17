@@ -3,7 +3,7 @@ import * as React from 'react'
 function PrivacyPage() {
 
   return (
-    <div className='m-10 text-lg space-y-3 bg-slate-500 bg-opacity-5 p-3 rounded-md'>
+    <div className='m-10 text-lg space-y-3 bg-slate-500 bg-opacity-5 rounded-lg shadow-lg p-3'>
       <h1><strong>Privacy Policy</strong></h1>
         <p>Last updated: August 09, 2022</p>
         <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>

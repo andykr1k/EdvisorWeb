@@ -18,7 +18,8 @@ import {
   TOSPage,
   PrivacyPage,
   AccessPage,
-  ReturnPage
+  ReturnPage,
+  TeamPage
 } from './components'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './config/firebase';
@@ -75,6 +76,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/team" element={<TeamPage />} />
           </Routes>
           <div className='bottom-0 z-50'>
           <Footer />
