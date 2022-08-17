@@ -4,7 +4,7 @@ function TeamPage() {
 
   return (
     <div className="m-10 text-lg space-y-3 bg-slate-500 bg-opacity-5 rounded-lg shadow-lg p-3">
-      <div class="grid place-items-center ">
+      <div class="grid place-items-center p-3">
           <p class="text-center text-3xl font-bold text-gray-800">
               Our Team
           </p>
