@@ -35,13 +35,13 @@ const deleteDocument = async (id) => {
 }
 
   return (
-    <div className='m-2 shrink-0 ' >
+    <div className='m-2 shrink-0' >
       <motion.button 
         whileHover={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
         onClick={onOpen}
       >
-      <div class="relative block p-3 border border-gray-100 rounded-lg shadow-md">
+      <div class="relative block p-3 border border-gray-100 hover:bg-slate-100 rounded-lg shadow-md">
         <div className="flex justify-between items-center">
         <svg
               xmlns="http://www.w3.org/2000/svg"

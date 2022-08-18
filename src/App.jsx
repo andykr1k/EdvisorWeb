@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { motion } from "framer-motion"
 import { Routes, Route } from 'react-router-dom'
 import { 
   Header, 
@@ -28,20 +27,20 @@ import './App.css'
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
-  const [ load, setLoad] = React.useState(false);
+  const [load, setLoad] = React.useState(false);
 
   React.useEffect(()=>{
     setLoad(true);
     setTimeout(()=>{
       setLoad(false);
-    }, 1000);
+    }, 1250);
   }, []);
 
   return (
     <div className="App">
     { load ? (
-      <div className='flex justify-center items-center h-screen'>
-        <GridLoader size={30} color={'#8AA3F3'} loading={load} />
+      <div className='grid place-items-center h-screen'>
+        <GridLoader size={35} color={'#8AA3F3'} loading={load} />
       </div>
     ) : (
       <div>
