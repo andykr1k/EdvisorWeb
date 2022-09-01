@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { motion } from 'framer-motion';
 import igetcData from '../data/igetc';
+import {Checkbox} from '@chakra-ui/react';
 function IGETCSection() {
 
   return (
@@ -11,10 +12,17 @@ function IGETCSection() {
             {igetcData.map((d) =>(
                 <div className='grid mt-3'>
                     <div className='flex justify-between text-slate-500 text-sm md:text-lg'>
-                        <h3>{d.name}</h3>
-                        <h3>{d.semUnits} Semester Units or {d.courseUnits} Quarter Units</h3>
+                    <div className='flex'>
+                      <Checkbox size='lg' colorScheme='orange'>
+                      </Checkbox>
+                      <div className='grid ml-3'>
+                          <h3>{d.name}</h3>
+                          <h4 className='text-slate-400 text-xs md:text-md mt-1'>{d.description}</h4>
+                      </div>
                     </div>
-                        <h4 className='text-slate-400 text-xs md:text-md mt-1'>{d.description}</h4>
+                      
+                        <h3>{d.semUnits} Semester Units or {d.courseUnits} Quarter Units</h3>
+                  </div>
                 </div>
             ))}
           </div>
