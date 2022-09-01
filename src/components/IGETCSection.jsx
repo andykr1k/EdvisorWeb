@@ -14,13 +14,7 @@ function IGETCSection() {
                         <h3>{d.name}</h3>
                         <h3>{d.semUnits} Semester Units or {d.courseUnits} Quarter Units</h3>
                     </div>
-                    {
-                        d.description 
-                    ? 
                         <h4 className='text-slate-400 text-xs md:text-md mt-1'>{d.description}</h4>
-                    :
-                        <div></div>
-                    } 
                 </div>
             ))}
           </div>

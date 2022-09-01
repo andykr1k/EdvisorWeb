@@ -24,3 +24,4 @@ export { default as ReturnPage } from './ReturnPage';
 export { default as AllCoursesSection } from './AllCoursesSection';
 export { default as TeamPage } from './TeamPage';
 export { default as IGETCSection } from './IGETCSection';
+export { default as NotificationCenter } from './NotificationCenter';
