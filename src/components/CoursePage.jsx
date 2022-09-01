@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { CourseSection, AllCoursesSection } from '../components'
+import { CourseSection, AllCoursesSection, IGETCSection } from '../components'
 
 function CoursePage() {
 
@@ -7,6 +7,7 @@ function CoursePage() {
     <div className='m-10'>
       <CourseSection />
       <AllCoursesSection />
+      <IGETCSection />
     </div>
   )
 }
