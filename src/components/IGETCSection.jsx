@@ -4,7 +4,7 @@ import igetcData from '../data/igetc';
 function IGETCSection() {
 
   return (
-    <div className='grid m-auto bg-slate-500 bg-opacity-5 rounded-lg shadow-lg p-2'>
+    <div className='bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-2'>
         <div className='flex-shrink-0 overflow-x-auto max-w-screen'>
           <div className='grid m-3'>
             <h2 className='text-slate-500 text-xl md:text-3xl'>IGETC</h2>
