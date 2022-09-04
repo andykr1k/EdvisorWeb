@@ -25,7 +25,7 @@ import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverArrow, P
                 <PopoverArrow />
                 <PopoverCloseButton />
                 <PopoverBody>
-                Lorem ipsum
+                All Caught Up!
                 </PopoverBody>
             </PopoverContent>
         </Popover>

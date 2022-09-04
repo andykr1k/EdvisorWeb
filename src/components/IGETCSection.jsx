@@ -9,7 +9,7 @@ function IGETCSection() {
         <div className='flex-shrink-0 overflow-x-auto max-w-screen'>
           <div className='grid'>
           <Accordion allowToggle>
-          <AccordionItem>
+          <AccordionItem border='0px'>
             <h2>
               <AccordionButton>
                 <Box flex='1' textAlign='left'>

@@ -14,7 +14,7 @@ function AllCoursesSection() {
   return (
     <div className="bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-2">
       <Accordion allowToggle>
-        <AccordionItem>
+        <AccordionItem border='0px'>
           <h2>
             <AccordionButton>
               <Box flex='1' textAlign='left'>
