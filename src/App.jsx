@@ -13,7 +13,7 @@ import {
   AddPage, 
   CourseSection, 
   CoursePage, 
-  SettingsPage,
+  SettingsModal,
   TOSPage,
   PrivacyPage,
   AccessPage,
@@ -23,7 +23,6 @@ import {
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './config/firebase';
 import GridLoader from 'react-spinners/GridLoader'
-import './App.css'
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
@@ -64,7 +63,7 @@ function App() {
             <Route path="/courses" element={<HomePage />} />
             }
             {user ? 
-              <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/settings" element={<SettingsModal />} />
             :
             <Route path="/settings" element={<HomePage />} />
             }

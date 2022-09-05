@@ -36,10 +36,7 @@ function HomePage() {
                     </Highlight>
                 </Heading>
                 <p class="mt-4 text-gray-200">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
-                    molestiae! Quidem est esse numquam odio deleniti, beatae, magni
-                    dolores provident quaerat totam eos, aperiam architecto eius quis
-                    quibusdam fugiat dicta.
+                    Simplify your college transfer process by centralizing all your information and progress.
                 </p>
 
                 <a
@@ -59,7 +56,7 @@ function HomePage() {
         <div class="p-8 md:p-12 lg:px-16 lg:py-24 bg-gradient-to-r from-black/75 via-gray-900/75 to-gray-700/75">
             <div class="max-w-lg text-center sm:text-left">
             <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
-                Follow your own path!
+                Follow your path!
             </h2>
 
             <p
@@ -107,8 +104,7 @@ function HomePage() {
                 <h3 class="mt-4 text-xl font-bold text-gray-600">Tailor Profile</h3>
 
                 <p class="mt-1 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-                possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+                Quickly log in and edit any details to better fit your profile.
                 </p>
             </a>
 
@@ -138,8 +134,7 @@ function HomePage() {
                 <h3 class="mt-4 text-xl font-bold text-gray-600">Create Goals</h3>
 
                 <p class="mt-1 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-                possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+                Our tools will intuitively create goals based off the majors and target colleges selected.
                 </p>
             </a>
 
@@ -169,8 +164,7 @@ function HomePage() {
                 <h3 class="mt-4 text-xl font-bold text-gray-600">Log Classes</h3>
 
                 <p class="mt-1 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-                possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+                After perfecting your profile, you can track your classes and overall progress in real time!
                 </p>
             </a>
 
@@ -200,8 +194,7 @@ function HomePage() {
                 <h3 class="mt-4 text-xl font-bold text-gray-600">Track Progress</h3>
 
                 <p class="mt-1 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-                possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+                All progress is tracked in real time, including overall gpa and acceptance percentage.
                 </p>
             </a>
 
@@ -228,11 +221,10 @@ function HomePage() {
                 />
                 </svg>
 
-                <h3 class="mt-4 text-xl font-bold text-gray-600">Follow THE PATH</h3>
+                <h3 class="mt-4 text-xl font-bold text-gray-600">Follow the Path</h3>
 
                 <p class="mt-1 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-                possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+                Our AI weighs all possible routes and calculates the highest probable route to complete your goals.
                 </p>
             </a>
 
@@ -262,8 +254,7 @@ function HomePage() {
                 <h3 class="mt-4 text-xl font-bold text-gray-600">Transfer!</h3>
 
                 <p class="mt-1 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-                possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+                Once you've completed all the steps, you have completed all the steps to maximize your potential in college acceptances.
                 </p>
             </a>
             </div>

@@ -12,24 +12,7 @@ function TeamPage() {
               Edvisor
           </p>
           <div class="flex items-center flex-col md:flex-row justify evenly">
-              <div class="p-4">
-                  <div class="text-center mb-4 opacity-90">
-                      <a href="#" class="block relative">
-                          <img alt="profile" src="/images/person/1.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
-                      </a>
-                  </div>
-                  <div class="text-center">
-                      <p class="text-2xl text-gray-800 ">
-                          Sahara Williams
-                      </p>
-                      <p class="text-xl text-gray-500  font-light">
-                          Co-Founder
-                      </p>
-                      <p class="text-md text-gray-500 max-w-xs py-4 font-light">
-                      BIO
-                      </p>
-                  </div>
-              </div>
+              
               <div class="p-4">
                   <div class="text-center mb-4 opacity-90">
                       <a href="#" class="block relative">
@@ -42,6 +25,25 @@ function TeamPage() {
                       </p>
                       <p class="text-xl text-gray-500">
                           Co-Founder/Engineer
+                      </p>
+                      <p class="text-md text-gray-500 max-w-xs py-4 font-light">
+                      BIO
+                      </p>
+                  </div>
+              </div>
+
+              <div class="p-4">
+                  <div class="text-center mb-4 opacity-90">
+                      <a href="#" class="block relative">
+                          <img alt="profile" src="/images/person/1.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
+                      </a>
+                  </div>
+                  <div class="text-center">
+                      <p class="text-2xl text-gray-800 ">
+                          Sahara Williams
+                      </p>
+                      <p class="text-xl text-gray-500 ">
+                          Co-Founder
                       </p>
                       <p class="text-md text-gray-500 max-w-xs py-4 font-light">
                       BIO
