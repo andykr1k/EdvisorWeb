@@ -30,13 +30,11 @@ export function SignIn() {
         <motion.button       
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }} 
-        className='bg-slate-500 rounded-lg shadow-lg p-3 text-center text-white flex items-center' 
+        className='bg-slate-500 rounded-lg shadow-lg p-3 text-center text-white flex items-center justify-center' 
         onClick={signInWithGoogle}
         >
-        <div className='w-1/5 mr-2'>
-        <img src={googleLogo} />
-        </div>
-          Sign In With Google
+        <img src={googleLogo} className='w-1/6 mr-2'/>
+        <h4 className=' font-semibold text-md md:text-lg'>Sign In With Google</h4>
         </motion.button>
       </div>
     )

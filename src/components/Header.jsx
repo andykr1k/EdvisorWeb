@@ -3,7 +3,7 @@ import logo from '../assets/icon.png'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../config/firebase';
 import { motion } from 'framer-motion'
-import { SettingsModal, NotificationCenter } from '../components'
+import { SettingsButton, NotificationCenter } from '../components'
 function Header() {
     const [user, loading, error] = useAuthState(auth);
 
@@ -38,7 +38,7 @@ function Header() {
                         </motion.a>
 
                         <NotificationCenter />
-                        <SettingsModal />
+                        <SettingsButton />
                         </div>
 
                         <button

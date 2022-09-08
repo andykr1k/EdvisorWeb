@@ -36,7 +36,7 @@ function HomePage() {
                     </Highlight>
                 </Heading>
                 <p class="mt-4 text-gray-200">
-                    Simplify your college transfer process by centralizing all your information and progress.
+                    Simplify your college transfer process by centralizing all your information while being able to view progress in realtime!
                 </p>
 
                 <a
