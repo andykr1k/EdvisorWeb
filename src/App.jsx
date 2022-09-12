@@ -11,7 +11,6 @@ import {
   UserHome, 
   FAQ, 
   AddPage, 
-  CourseSection, 
   CoursePage, 
   SettingsModal,
   TOSPage,

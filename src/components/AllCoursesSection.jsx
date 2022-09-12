@@ -12,13 +12,13 @@ function AllCoursesSection() {
     const coursesRef = firestore.collection(pathString);
     const [allCourses] = useCollectionData(coursesRef, { idField: 'abbrev' });
   return (
-    <div className="bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-2">
+    <div className="bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-3">
       <Accordion allowToggle>
         <AccordionItem border='0px'>
           <h2>
             <AccordionButton>
               <Box flex='1' textAlign='left'>
-              <h2 className='text-slate-500 text-xl md:text-3xl'>All Courses</h2>
+              <h2 className='text-slate-500 text-xl font-bold md:text-3xl'>All Courses</h2>
               </Box>
               <AccordionIcon />
             </AccordionButton>

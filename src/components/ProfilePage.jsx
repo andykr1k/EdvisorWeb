@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ProfilePicture, CourseSection, UserCharts, AddCourseForm, OffPageAdd } from '../components'
+import { ProfilePicture, CurrentSection, UserCharts, AddCourseForm, OffPageAdd } from '../components'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { SignOut, auth } from '../config/firebase';
 
@@ -18,7 +18,7 @@ function ProfilePage() {
           </div>
         </div>
         <div className='m-3 place-items-start'>
-          <CourseSection />
+          <CurrentSection />
         </div>
       </div>
     </div>

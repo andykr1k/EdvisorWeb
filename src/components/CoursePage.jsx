@@ -1,11 +1,13 @@
 import * as React from 'react'
-import { CourseSection, AllCoursesSection, IGETCSection } from '../components'
+import { CurrentSection, AllCoursesSection, IGETCSection, CompletedSection, PathSection } from '../components'
 
 function CoursePage() {
 
   return (
     <div className='m-10'>
-      <CourseSection />
+      <CurrentSection />
+      <CompletedSection />
+      <PathSection />
       <AllCoursesSection />
       <IGETCSection />
     </div>

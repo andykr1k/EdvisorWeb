@@ -5,7 +5,7 @@ import {Checkbox, Accordion, AccordionButton, AccordionIcon, AccordionItem, Acco
 function IGETCSection() {
 
   return (
-    <div className='bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-2'>
+    <div className='bg-slate-500 bg-opacity-5 rounded-lg shadow-lg mt-3 p-3'>
         <div className='flex-shrink-0 overflow-x-auto max-w-screen'>
           <div className='grid'>
           <Accordion allowToggle>
@@ -13,7 +13,7 @@ function IGETCSection() {
             <h2>
               <AccordionButton>
                 <Box flex='1' textAlign='left'>
-                <h2 className='text-slate-500 text-xl md:text-3xl'>IGETC</h2>
+                <h2 className='text-slate-500 text-xl font-bold md:text-3xl'>IGETC</h2>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>
