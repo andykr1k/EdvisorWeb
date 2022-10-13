@@ -41,7 +41,7 @@ function App() {
         <GridLoader size={35} color={'#8AA3F3'} loading={load} />
       </div>
     ) : (
-      <div>
+      <div className='grid h-screen'>
         <div className='sticky top-0 z-50'>
           <Header />
         </div>
