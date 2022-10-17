@@ -7,7 +7,6 @@ function ReturnPage() {
       <h1><strong>Return and Refund Policy</strong></h1>
         <p>Last updated: August 09, 2022</p>
         <p>Thank you for shopping at Edvisor.</p>
-        <p>If, for any reason, You are not completely satisfied with a purchase We invite You to review our policy on refunds and returns. This Return and Refund Policy has been created with the help of the <a href="https://www.privacypolicies.com/return-refund-policy-generator/" target="_blank">Return and Refund Policy Generator</a>.</p>
         <p>The following terms are applicable for any products that You purchased with Us.</p>
         <h1>Interpretation and Definitions</h1>
         <h2>Interpretation</h2>

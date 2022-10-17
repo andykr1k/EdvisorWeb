@@ -1,8 +1,7 @@
 import * as React from 'react'
-import { CourseCard, OffPageAdd } from '.'
-import { SignOut, auth, firestore } from '../config/firebase';
+import { CourseCard } from '.'
+import { auth, firestore } from '../config/firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import { motion } from 'framer-motion';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 

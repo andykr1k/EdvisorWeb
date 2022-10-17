@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { SignOut, auth } from '../config/firebase';
+import { auth } from '../config/firebase';
 
 function UserHome() {
     const [user, loading, error] = useAuthState(auth);
@@ -12,6 +12,7 @@ function UserHome() {
     <section class="p-8 bg-slate-500 bg-opacity-5 rounded-lg shadow-lg">
         <div class="grid place-items-center">
             <div className='grid place-items-center'>
+                <image src={userHighResPhoto} />
                 <p class="text-2xl text-gray-800">
                     Welcome Back
                 </p>
