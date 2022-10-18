@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header class="bg-gray-50/80 shadow-lg">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8"> 
+        <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 lg:px-8"> 
             { user ? 
                 <div class="flex items-center ">
                     <div class="flex items-center justify-between flex-1 gap-8 ">
@@ -61,11 +61,10 @@ function Header() {
                         </p>
 
                         </button>
-                        
                     </div>
                 </div>
             :
-            <div></div> 
+            <div></div>
             }
             { user ?
             <div></div>
@@ -79,7 +78,7 @@ function Header() {
                         <h1 class="text-sm font-bold text-gray-500">
                             Welcome to
                         </h1>
-                        <p class="mt-1.5 text-3xl font-bold sm:text-3xl text-gray-900">
+                        <p class="text-3xl font-bold sm:text-3xl text-gray-900">
                             Edvisor
                         </p>
                     </div>

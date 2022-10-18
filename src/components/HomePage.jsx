@@ -30,13 +30,13 @@ function HomePage() {
                 <Heading lineHeight='tall' class="text-2xl text-white font-bold sm:text-3xl" >
                     <Highlight
                         query='generation'
-                        styles={{ px: '1', py: '1', rounded: 'md', bg: 'gray.200' }}
+                        styles={{ px: '0', py: '0.5', rounded: 'md', bg: 'gray.200' }}
                     >
                     Welcome to the next generation of tools to help further higher education.
                     </Highlight>
                 </Heading>
                 <p class="mt-4 text-gray-200">
-                    Simplify your college transfer process by centralizing all your information while being able to view progress in realtime!
+                    Simplify your college transfer and graduation process by centralizing all your information while being able to view progress in realtime!
                 </p>
 
                 <a
