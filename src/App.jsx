@@ -75,9 +75,9 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<TeamPage />} />
           </Routes>
-          <div className='bottom-0 z-50'>
-          <Footer />
-        </div>
+          <div className='z-50'>
+            <Footer />
+          </div>
         </div>
       )
     }

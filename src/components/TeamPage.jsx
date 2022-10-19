@@ -1,4 +1,7 @@
 import * as React from 'react'
+import photoAndy from '../assets/andy.jpg'
+import photoSahara from '../assets/sahara.jpeg'
+
 function TeamPage() {
 
   return (
@@ -15,7 +18,7 @@ function TeamPage() {
               <div class="p-4">
                   <div class="text-center mb-4 opacity-90">
                       <a href="#" class="block relative">
-                          <img alt="Andrew Krikorian" src="../assets/andy.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
+                          <img alt="Andrew Krikorian" src={photoAndy}class="mx-auto object-cover rounded-full h-40 w-40 "/>
                       </a>
                   </div>
                   <div class="text-center">
@@ -34,7 +37,7 @@ function TeamPage() {
               <div class="p-4">
                   <div class="text-center mb-4 opacity-90">
                       <a href="#" class="block relative">
-                          <img alt="Sahara Williams" src="../assets/andy.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
+                          <img alt="Sahara Williams" src={photoSahara} class="mx-auto object-cover rounded-full h-40 w-40 "/>
                       </a>
                   </div>
                   <div class="text-center">

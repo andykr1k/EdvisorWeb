@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Icon from '../assets/icon.png'
 
 function AboutPage() {
 
@@ -7,19 +8,16 @@ function AboutPage() {
       <section>
         <div class="max-w-screen-xl p-5">
           <div class="max-w-3xl">
-            <h2 class="text-3xl font-bold sm:text-4xl">
+            <h2 class="text-3xl font-bold sm:text-4xl ">
               About Us
             </h2>
           </div>
 
           <div class="grid grid-cols-1 gap-8 mt-8 lg:gap-16 lg:grid-cols-2">
-            <div class="relative h-64 overflow-hidden sm:h-80 lg:h-full">
               <img
-                class="absolute inset-0 object-cover w-full h-full"
-                src="https://www.hyperui.dev/photos/man-1.jpeg"
-                alt="Man using a computer"
+                src={Icon}
+                alt="Edvisor Logo"
               />
-            </div>
 
             <div class="lg:py-16">
               <article class="space-y-4 text-gray-600">

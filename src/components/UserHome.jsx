@@ -12,7 +12,6 @@ function UserHome() {
             <div className='grid place-items-center'>
                 <ProfilePicture />
             </div>
-
         </div>
     </section>
     </div>
