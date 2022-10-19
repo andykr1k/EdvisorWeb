@@ -1,5 +1,4 @@
 import * as React from 'react'
-
 function TeamPage() {
 
   return (
@@ -16,7 +15,7 @@ function TeamPage() {
               <div class="p-4">
                   <div class="text-center mb-4 opacity-90">
                       <a href="#" class="block relative">
-                          <img alt="profile" src="/images/person/4.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
+                          <img alt="Andrew Krikorian" src="../assets/andy.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
                       </a>
                   </div>
                   <div class="text-center">
@@ -35,7 +34,7 @@ function TeamPage() {
               <div class="p-4">
                   <div class="text-center mb-4 opacity-90">
                       <a href="#" class="block relative">
-                          <img alt="profile" src="/images/person/1.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
+                          <img alt="Sahara Williams" src="../assets/andy.jpg" class="mx-auto object-cover rounded-full h-40 w-40 "/>
                       </a>
                   </div>
                   <div class="text-center">
