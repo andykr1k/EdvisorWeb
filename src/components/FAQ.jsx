@@ -9,7 +9,7 @@ function FAQ() {
 
   return (
     <div class="space-y-4 p-5">
-        <details class="p-6 bg-slate-500 rounded-lg shadow-lg bg-opacity-5 group" open>
+        <details class="p-6 bg-slate-500 rounded-lg shadow-lg bg-opacity-5 group">
             <summary class="flex items-center justify-between cursor-pointer">
             <h5 class="font-medium text-gray-900">
                 Lorem ipsum dolor sit amet consectetur adipisicing?
